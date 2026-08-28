@@ -6,6 +6,21 @@ and must not be swept.
 
 ---
 
+## Emma's first look at the renamed hero, 28 Aug 2026: the juniors come back into the lede
+
+Emma reviewed the live page the day it went up, relayed by Kate. Her call: with the
+campaign name no longer saying junior, the hero underneath it has to make obvious that
+this is the juniors, and the reframe band alone is not enough. So the lede's junior
+sentence returns, exactly as it read before pass 3: *"Our junior stylists are the
+specialists for exactly those appointments."* **This reverses one line of the pass 3 hero
+copy pass** (which had moved the tier out of the hero on the sells-the-habit reading of
+the rename) and it is hers to reverse: the authority order gives Emma the copy. The
+28 Aug ruling table is amended accordingly: junior stays out of the campaign name, the
+hero label and the titles, and is now deliberately IN the hero lede. Everything else in
+pass 3 stands.
+
+---
+
 ## Pass 3, 28 Aug 2026: the campaign is The Hair Rhythm By Tara Rose
 
 **The rename.** Emma-Louise confirmed the name, relayed by Dawn on 28 Aug. Kate's call
