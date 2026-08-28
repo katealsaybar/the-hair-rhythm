@@ -575,32 +575,26 @@ body{ overflow-x:clip; }
 .press-strip--dark .press-row a:hover{ color:#fff; text-decoration-color:#fff; }
 
 /* ------------------------------------------------------------ THE RHYTHM STRIP
-   Dawn's ask, 28 Aug 2026, approved by Kate in part: the rhythm readable in one
-   glance near the top, in the page's own week-marker language rather than icons.
-   One horizontal band inside the rhythm section, replacing the prose paragraph
-   that listed the same four appointments in sentences. The markers reuse the
-   tstep .wk voice; on this dark ground they take the bright accent, per the
-   core sheet's dark-ground rule. Stacks vertically under 700px, the arrows
-   turning to point down so the flow survives the stack. */
-.rstrip{
-  display:flex; align-items:center; justify-content:center;
-  gap:clamp(14px,2.4vw,30px);
-  max-width:900px; margin:0 auto 30px; padding:22px 16px;
-  border-top:1px solid rgba(255,255,255,.16);
-  border-bottom:1px solid rgba(255,255,255,.16);
+   Dawn's ask, 28 Aug 2026, approved by Kate in part: the rhythm readable in
+   one glance near the top, in the page's own week-card language rather than
+   icons. The strip is the tstep timeline itself, condensed: four white cells,
+   marker and week name only, inside the dark rhythm section, replacing the
+   prose paragraph that listed the same four appointments in sentences. Kate's
+   first look at a floating-text version on a wide screen killed it the same
+   day; the white cells carry the contrast the way they already do in the
+   In-the-chair and blonde-band timelines. Cells go 2x2 then single column on
+   a phone, same breaks as the blonde band's four-step grid. */
+.timeline--strip{
+  grid-template-columns:repeat(4,1fr);
+  max-width:900px; margin:0 auto 30px;
+  background:rgba(255,255,255,.16);
 }
-.rstrip__beat{ text-align:center; min-width:0; }
-.rstrip__beat .wk{
-  display:block; font-family:var(--fb); font-size:11.5px; font-weight:700;
-  letter-spacing:.16em; text-transform:uppercase; color:var(--accent);
-}
-.rstrip__beat b{
-  display:block; margin-top:8px;
-  font-family:var(--fd); font-weight:500; font-size:clamp(15px,1.6vw,18px);
-  line-height:1.2; color:#fff;
-}
-.rstrip__arr{ color:var(--accent); font-size:15px; flex:0 0 auto; }
-@media(max-width:700px){
-  .rstrip{ flex-direction:column; gap:12px; padding:20px 12px; }
-  .rstrip__arr{ transform:rotate(90deg); font-size:14px; }
-}
+@media (max-width:760px){ .timeline--strip{ grid-template-columns:1fr 1fr; } }
+@media (max-width:440px){ .timeline--strip{ grid-template-columns:1fr; } }
+
+/* -------------------------------------------------------------- PHONE PREFIX
+   Kate, 28 Aug: the shared sheet's 96px prefix column truncated the selected
+   country to "+971 . U". The column now sizes to the select's own width, the
+   option labels use the short country names, and the number field keeps the
+   rest of the row. .phone-wrap lives in trs-blocks.css, overridden here. */
+.phone-wrap{ grid-template-columns:auto 1fr; }
