@@ -87,13 +87,13 @@ menu, no dead anchors, no banned words, no console errors, no horizontal scroll 
 whether the old URL was ever sent outside the team**, and that decides archive versus
 delete. Nothing links to it from the new repo.
 
-**The Blonde collision, open, for Emma-Louise.** The Blonde campaign's landing page has a
-three-visit section whose id is literally `#rhythm`, selling a plan built on the same
-appointment-between-appointments argument, and that campaign is being priced now. Two
-campaigns, one idea, two names. Either it is one Tara Rose rhythm doctrine with two
-campaigns applying it, in which case Blonde sits inside The Hair Rhythm rather than
-beside it, or it is drift and two pages will compete to teach the same concept to the
-same woman. Not this pass's job to fix.
+**The Blonde Standard collision, open, for Emma-Louise.** The Blonde Standard's landing
+page (Kate confirmed the name, 28 Aug) has a three-visit section whose id is literally
+`#rhythm`, selling a plan built on the same appointment-between-appointments argument,
+and that campaign is being priced now. Two campaigns, one idea, two names. Either it is
+one Tara Rose rhythm doctrine with two campaigns applying it, in which case The Blonde
+Standard sits inside The Hair Rhythm rather than beside it, or it is drift and two pages
+will compete to teach the same concept to the same woman. Not this pass's job to fix.
 
 **Still open, carried from pass 2, unchanged:** the single blow-dry price and the colour
 length bands · the Tone Reset body copy saying 130 against the page's 175 · the 10-pack
