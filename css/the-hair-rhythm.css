@@ -1,4 +1,4 @@
-/* junior-experience.css. The Junior Experience.
+/* the-hair-rhythm.css. The Hair Rhythm By Tara Rose.
    Built to Layer 5, The Landing Page Handover. Only the blocks the voucher page
    did not already have: the Hero-B split, the three entry cards, the availability
    band, the select/textarea form fields, and the mobile sticky bar. Everything
@@ -21,12 +21,15 @@
   padding:clamp(28px,5vw,56px) 0;
   max-width:none;
 }
-/* The campaign label, not an eyebrow. Emma, 25 Aug: "Junior experience needs to be
-   bigger." It was 12.5px fine print above a 52px headline. */
+/* The campaign label. Under The Hair Rhythm the label names the same idea the H1
+   ends on, so at the previous 22px it pre-announced the reveal and the H1 read as
+   an echo. The label steps back to a quiet mark and the H1 keeps the reveal.
+   Emma's 25 Aug "bigger" instruction applied to the old name selling the tier;
+   if she wants this one large again it is one line here. */
 .hero-b .campaign-label{
   display:block; margin-bottom:16px;
   font-family:var(--fb); font-weight:600; text-transform:uppercase;
-  font-size:clamp(16.5px,4.4vw,22px); letter-spacing:.2em; line-height:1.2;
+  font-size:clamp(12.5px,3vw,14px); letter-spacing:.2em; line-height:1.4;
   color:var(--accent-text);
 }
 .hero-b .h-1{
@@ -119,7 +122,7 @@
 .avail b{ color:var(--ink); font-weight:500; }
 
 /* -------------------------------------------------------- FORM, extra controls
-   page-beauty-voucher.css styles .field input only. The Junior Experience form also
+   page-beauty-voucher.css styles .field input only. The Hair Rhythm form also
    uses selects and a textarea. The 16px floor is inherited from trs-core.css. */
 .field select,
 .field textarea{

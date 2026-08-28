@@ -18,7 +18,7 @@ Emma-Louise Usher's Personal Meeting Room*
 
 # Internal build brief: quotes a private meeting, and names which stylists are not yet
 # signed off on colour. Lives beside the code, never ships.
-docs/REBUILD-PROMPT.md
+docs/*PROMPT*.md
 
 # Superseded internal framework review. The page follows Emma's concept now, and
 # this repo is public.

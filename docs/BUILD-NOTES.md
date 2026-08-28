@@ -1,4 +1,107 @@
-# The Junior Experience, build notes
+# The Hair Rhythm By Tara Rose, build notes
+
+Newest first. Entries below the pass 3 section carry the campaign's earlier names
+(The Junior Experience, A Proper Look, The Unhurried Hour); that is deliberate history
+and must not be swept.
+
+---
+
+## Pass 3, 28 Aug 2026: the campaign is The Hair Rhythm By Tara Rose
+
+**The rename.** Emma-Louise confirmed the name, relayed by Dawn on 28 Aug. Kate's call
+the same day: new folder (`the hair rhythm`), new repo (`katealsaybar/the-hair-rhythm`),
+the page migrates with its full git history. The old name sold the stylist tier and made
+junior the product; the new name sells the habit, so junior stops being the offer and
+becomes the honest answer to who is doing my hair.
+
+**Where the word junior now lives, per Kate's 28 Aug ruling.** Out of the campaign name,
+the hero campaign label, the `<title>`, and the OG and Twitter titles. Still on the page:
+the reframe band, the FAQ *"Is a junior stylist experienced enough?"* and its byte-matched
+JSON-LD twin, the reviews, the capability sentence in the menu, the blonde timeline, the
+wellness prose and the photograph alt texts. The meta descriptions also keep it, because
+they are answer copy rather than the offer, and the ruling table does not list them.
+
+**One place the ruling table described a page that no longer exists.** It says the
+`JUNIOR STYLISTS` heading in Expertise stays capitalised and dominant. That heading left
+the page on 26 Aug in Emma's own review round (commits `5ab4e04` and `9c94c3c`): the
+section now leads with *"What they do, they do very well."* and the specialists claim
+lives in the dark band above it. Nothing was resurrected: Emma's later instruction wins,
+and the tier is still named plainly in the band, the menu and the FAQ. **Flagged for Kate
+rather than acted on.**
+
+**The H1 collision, and which option shipped.** Under a label reading The Hair Rhythm By
+Tara Rose, Emma's master line *"Great hair isn't one visit. It's a rhythm."* ends by
+naming the label printed directly above it. Two options were on the table:
+
+1. **Keep the H1 verbatim and let the label step back** to a quiet mark
+   (12.5 to 14px, down from the 16.5 to 22px it grew to on 25 Aug), so the line still
+   lands as the reveal. Emma's *bigger* instruction applied to the old name selling the
+   tier, not to this one.
+2. Let the label carry *rhythm* and split the H1: the headline keeps the loss
+   (*"Great hair isn't one visit."*) and the reveal moves into the support line.
+
+**Option 1 shipped.** It keeps Emma's tested line intact while she is away; option 2
+rewrites her sentence without her in the room. **Kate decides whether it stands**; option
+2 is a two-line change if she prefers it.
+
+**The hero and reframe copy pass.** The lede no longer makes the junior offer: *"Our
+junior stylists are the specialists for exactly those appointments"* became *"This page
+is for exactly those appointments, and for the specialists who do them."* The reframe
+band directly below now names the thing it reframes: *"Our junior stylists are not
+trainees waiting to become something else"*, because with the campaign label no longer
+saying junior, *these* had lost its referent. The word *trainee* still appears exactly
+once. The WhatsApp prefill moved from *"I read about The Junior Experience and I'd like
+to book one"* to *"I read about The Hair Rhythm and I'd like to book an appointment"*.
+The FAQ uses the short form (*"Which salons run The Hair Rhythm?"*) because the full name
+reads as a mouthful inside a question; the `<title>`, OG and Twitter titles, `Service.name`,
+hero label and footer carry the full name. The title drops the old *"· Tara Rose Salon"*
+suffix because the name now contains the brand.
+
+**The tracking value.** `campaign` moved `junior-experience-2026` to `the-hair-rhythm-2026`,
+once, in the hidden field (it never lived in `js/tracking.js`). Whoever reads GHL in
+October: those two values are the same campaign; the page was noindex and pre-launch with
+no spend, so there is no split series. Emma's `offering`, `branch` and `emirate`
+vocabulary is untouched, and so is the rest of the tracking layer, **including the `JE-`
+session ref prefix**, per the pass rules; if Kate wants it moved to `HR-` it is one line
+in `js/tracking.js`.
+
+**Slugs and files.** `/en/ae/the-hair-rhythm/` in the canonical, hreflangs and OG URL;
+`css/the-hair-rhythm.css`; `og/the-hair-rhythm.jpg` (same frame, new name, the production
+meta URL moved with it); in the tree, `the-hair-rhythm/` and
+`_css/page-the-hair-rhythm.css` with `pages.json` following.
+
+**The tree copy had drifted again, and the port is now a script.** Every commit after the
+25 Aug port (the consult-rail photographs, the section reorder from Tara's voice note,
+the FAQ stepping into the light, the fold changes) existed only in the standalone; the
+tree page was three days behind in markup and styling. `port.py` now generates the tree
+copy from this folder: fonts preamble, CSS carrier marker for `build.py`, inlined
+scripts, `/tara-rose-pages/assets/` paths, the page sheet synced into `_css/`, images
+copied across, and it refuses to run if the shared sheets have forked. Verified after the
+port: both copies word-identical at 2,825 words of visible copy, `build.py --check`
+85/85, JSON-LD parses, FAQPage mirrors the visible FAQ byte for byte, offers match the
+menu, no dead anchors, no banned words, no console errors, no horizontal scroll at 375,
+390, 768 and 1280, the real Playfair 700 confirmed loaded in the tree copy.
+
+**The old repo is up and untouched.** `katealsaybar/the-junior-experience` stays live,
+`noindex,nofollow`, pre-launch. It is not archived and not deleted: **Kate confirms
+whether the old URL was ever sent outside the team**, and that decides archive versus
+delete. Nothing links to it from the new repo.
+
+**The Blonde collision, open, for Emma-Louise.** The Blonde campaign's landing page has a
+three-visit section whose id is literally `#rhythm`, selling a plan built on the same
+appointment-between-appointments argument, and that campaign is being priced now. Two
+campaigns, one idea, two names. Either it is one Tara Rose rhythm doctrine with two
+campaigns applying it, in which case Blonde sits inside The Hair Rhythm rather than
+beside it, or it is drift and two pages will compete to teach the same concept to the
+same woman. Not this pass's job to fix.
+
+**Still open, carried from pass 2, unchanged:** the single blow-dry price and the colour
+length bands · the Tone Reset body copy saying 130 against the page's 175 · the 10-pack
+validity · what the page says about the campaign ending · one WhatsApp number serving four
+branches · `trs-brand-guardian` has seen none of the copy · review-client consent · the
+real blow-dry volume figure from Phorest · whether a standalone toner exists.
+
+---
 
 ### Kate's ruling, 25 Aug evening: Emma's latest document is the price authority
 
