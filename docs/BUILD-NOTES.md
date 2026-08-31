@@ -6,6 +6,64 @@ and must not be swept.
 
 ---
 
+## Pass 4, 31 Aug 2026: the Q4 pricing meeting reprices the page and pulls two groups
+
+Source: the 31 Aug ops meeting (Jumera, Jhoana, Kate — Zoom doc "Q4 Campaigns: Decisions,
+Pricing Fixes & Launch Actions"). Its guardrail: **every promotional discount sits at
+20 to 25 percent**, against a hard maximum of 25 to 30 before the promotion stops being
+profitable. The page's Tone Reset and blow-dry maths were built at 30 percent, which is why
+every one of these numbers moved. As always, no percentage prints on the page; the discount
+lives in the computation only.
+
+**Confirmed standalone prices from the meeting:** single blow-dry 110 (Short), roughly
+120 to 125 (Medium), 160 (Extra Long); standalone toner 140 / 195 / 250 / 330. The Long
+blow-dry single was not stated in the meeting; **140 is carried over from Emma's original
+grid and is the one band still needing confirmation against the price list.** Medium is
+built on 120, the grid's original base and the low end of Jhoana's range.
+
+**What changed:**
+
+- **The single blow-dry line is 110, not 150.** The meeting confirmed Phorest's number,
+  which closes the 150-versus-110 question Kate ruled on 25 Aug in the document's favour;
+  the document was wrong.
+- **The Blow-dry Edit (x3, 20 percent off singles):** 264 / 288 / 336 / 384. Short rose
+  with the 110 single; Extra Long fell with the corrected 160 single (was 180 implied).
+- **The Blow-dry Series (x5, 25 percent off):** 415 / 450 / 525 / 600. Short is 412.50
+  exact, printed 415 (24.5 percent) to stay inside the window.
+- **The Tone Reset is toner-plus-blow-dry at 20 percent off**, the shallowest of Jumera's
+  20/22/25 tiers, because the meeting doubted toner promo economics outright:
+  200 / 250 / 310 / 390 (was 175 / 225 / 275 / 380, a 30 percent build on wrong toner
+  references). The from-price moved in the three meta descriptions and all five JSON-LD
+  offers.
+- **Colour packages and Smoothing are off the page entirely** — deferred to January or
+  summer: Q4 is peak season and junior chair time is the constraint (keratin at 620 for
+  3 to 4 hours was rejected as underpriced against 3 to 4 blow-dries in the same window).
+  Gone: both mgroups, the "When you're changing it" rband, their nav chips, the three
+  form options (root / colour / smoothing), their OFFERING entries in `js/tracking.js`,
+  their SPY entries in `js/nav-scroll.js`, their three JSON-LD offers, and
+  `menu-colour.jpg` / `menu-smoothing.jpg` (deleted here, still in the page tree where
+  other pages may use them). The word colour survives only where it means the client's
+  own colour appointments, the Colour Lock treatment, the awards, the reviews and the
+  Confidence Promise.
+- **Treatments and Courses are untouched**: the meeting validated both as-is.
+
+**Four Weeks of Blow-dries: 799 became 660, Kate's same-day ruling.** Eight Short
+blow-dries at 110 is 880, so Emma's 799 was only a 9 percent discount — outside the
+window on the shallow side. Kate ruled every price follows 20 to 25, so the biggest
+bundle takes the deepest tier, matching the ladder (x3 at 20, x5 at 25, the four-week
+eight at 25): 880 × 0.75 = 660 exactly. Kate also confirmed the singles as
+110 / 120-125 / 140 / 160, which closes the Long-band question flagged above, and kept
+the Tone Reset on the page at the 20 percent build.
+
+**Also flagged:** the meeting's own outcome pulled the standalone toner *promotion* from
+the Q4 launch, positioning toner inside a maintenance bundle instead. Kate's instruction
+was to fix the Tone Reset prices, not remove the group, and the Tone Reset is already the
+bundled form (toner plus blow-dry inside the rhythm) — but if Jumera reads the page as
+still carrying a toner promo, that is the conversation. Jumera reviews the corrected
+figures next week; a golden-number booking target is now required before any launch.
+
+---
+
 ## Emma's first look at the renamed hero, 28 Aug 2026: the juniors come back into the lede
 
 Emma reviewed the live page the day it went up, relayed by Kate. Her call: with the

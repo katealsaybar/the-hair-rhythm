@@ -45,7 +45,6 @@
      without a translation step. product stays look-vs-door, which is what Layer 4
      measures the conversion on. */
   var OFFERING={toner:'toner-reset',treatment:'treatment-blowdry',bundle:'blowdry',
-    root:'colour-package',colour:'colour-package',smoothing:'smooth-edit',
     scalp:'treatment-blowdry',course:'treatment-course'};
   /* branch, in Emma's GHL vocabulary. Her list has no tag for "either Dubai salon", so
      that one is left blank rather than guessed; the salon field still carries her answer. */

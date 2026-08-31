@@ -14,7 +14,7 @@
   var bar=document.querySelector('.offer-nav');
   var zone=document.querySelector('.menu-zone');
   var root=document.documentElement;
-  var SPY=['blowdries','treatments','courses','toner','blonde','colour','smoothing']
+  var SPY=['blowdries','treatments','courses','toner','blonde']
     .map(function(id){ return document.getElementById(id); }).filter(Boolean);
   var chips={};
   document.querySelectorAll('.ochip').forEach(function(a){
