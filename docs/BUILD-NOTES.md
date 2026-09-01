@@ -55,6 +55,22 @@ eight at 25): 880 × 0.75 = 660 exactly. Kate also confirmed the singles as
 110 / 120-125 / 140 / 160, which closes the Long-band question flagged above, and kept
 the Tone Reset on the page at the 20 percent build.
 
+**Layout follow-up, 1 Sep: the two-band cards stop repeating themselves.** Feedback
+relayed by Kate: the Treatment and Blow-dry card read as confusing, because it printed
+the same five treatments twice — an unlabelled open list, then the identical list again
+inside a "Long to extra long hair" disclosure, with the 33px from-price wedged between
+the two. Both bands now sit side by side in one labelled table (`.ptable`, page sheet
+only, shared sheets untouched): treatment name, Short to medium, Long to extra long,
+plus one line saying every price includes the blow-dry, which the meeting confirmed and
+the card never stated near the numbers. The Courses card had the same duplicated
+pattern and takes the same table. The from-price stays on the face at full size, per
+the standing rule. The blow-dry bundles and the Tone Reset keep their disclosure,
+because theirs is one price by length, not two lists of the same items. Price columns
+are content-width so the numbers hug the card's right edge as before; on a phone the
+column headings wrap instead of forcing the table past the card (caught at the pane's
+own 360px before shipping). Verified: table fits inside a 280px card, no page overflow
+at 375, both copies ported, 85/85.
+
 **Also flagged:** the meeting's own outcome pulled the standalone toner *promotion* from
 the Q4 launch, positioning toner inside a maintenance bundle instead. Kate's instruction
 was to fix the Tone Reset prices, not remove the group, and the Tone Reset is already the
