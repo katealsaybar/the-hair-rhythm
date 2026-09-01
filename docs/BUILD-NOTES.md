@@ -6,6 +6,50 @@ and must not be swept.
 
 ---
 
+## Pass 5, 1 Sep 2026: Kate catches the giveaway, and the official site becomes the base
+
+Kate, reading the treatment card as an operator: Repair at 150 with the blow-dry
+included is lugi — the junior blow-dry alone is 110. She ruled the official website
+(tararosesalon.com/en/ae/pricing/ and /services/hair/treatments/) the pricing base.
+Checked against it, **the approved treatment packages were charging the standalone
+treatment price and giving the whole blow-dry away** (vegan Nurture 150 standalone =
+the campaign's Scalp Reset vegan at 150 with a blow-dry inside), an effective 40%+
+discount that survived the 31 Aug meeting because nobody ran the arithmetic Jumera ran
+on keratin and toner. Emma's team-confirmed figures were faithful on the page; the
+figures themselves were the fault.
+
+**The official junior blow-dry singles are 110 / 125 / 140 / 155** (the meeting's
+rough 120-125 and 160 corrected by the site), so every derived number rebased:
+
+- **Blow-dry Edit x3, 20% off singles:** 264 / 300 / 336 / 372 (medium and extra long
+  moved; short and long were already exact).
+- **Blow-dry Series x5, 25% off:** 415 / 470 / 525 / 585. The old medium 450 was 28%
+  off the true 625 base — past the ceiling — and the old 600 XL was built on a 160
+  single that does not exist.
+- **Treatment and Blow-dry = official standalone treatment + junior blow-dry, at 20%,
+  rounded down to the nearest 5 so nothing slips under the window:** Repair (Bond
+  Repairing 150/250) 205 / 310 · Colour Lock (Colour Locking Treatment, flat 200)
+  245 / 270 · Restore Edit (Restore or Revive vegan 250/350) 285 / 390 · Scalp Reset
+  vegan (Nurture 150) 205 / 230 · Scalp Reset caviar (Nurture 200) 245 / 270. From
+  AED 205. Blow-dry-included stays true and now actually costs something.
+- **Treatment Courses = sessions × the standalone treatment at 25%, the biggest-
+  commitment tier:** the card has never promised a blow-dry per session, so the course
+  is priced as the treatment alone. Repair 340 / 565 (three) and 565 / 940 (five),
+  Colour Lock 450 flat, Restore Edit 565 / 790, scalps 340 and 450 flat. The old 315
+  was 30% off even the treatment-only reading. Flat-priced treatments produce equal
+  bands, which is honest rather than a mistake.
+- **Tone Reset XL 390 to 385**: with the real 155 blow-dry the sum is 485 and 390 was
+  19.6%, just outside on the shallow side.
+
+Every price on the page now computes to 20-25% off the official site's standalone
+prices. **Two judgment calls for Jumera's sign-off, flagged rather than settled:**
+Colour Lock is mapped to the flat AED 200 Colour Locking Treatment (the site's add-on
+price, no length bands published), and courses price the treatment alone — if Emma
+intends a blow-dry in every course session, the course column rebuilds on the package
+numbers instead.
+
+---
+
 ## Pass 4, 31 Aug 2026: the Q4 pricing meeting reprices the page and pulls two groups
 
 Source: the 31 Aug ops meeting (Jumera, Jhoana, Kate — Zoom doc "Q4 Campaigns: Decisions,
