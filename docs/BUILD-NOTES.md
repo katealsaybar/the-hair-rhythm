@@ -6,6 +6,33 @@ and must not be swept.
 
 ---
 
+## Pass 5 addendum, 1 Sep 2026 PM: Kate answers the three flags
+
+1. **The toner base is the website's Classic Toner: from 140 / 195 / 250 / 355.**
+   Kate ruled "follow the website"; the meeting's 330 XL was wrong (site says 355), and
+   Gloss Boss turned out to be a different service. Tone Reset bands are now
+   200 / 255 / 310 / 405 at 20% off toner-plus-blow-dry.
+2. **Full length bands.** Both tables move from two bands to the site's four
+   (Short/Fine · Medium · Long/Thick · Extra Long). The site publishes treatment prices
+   as min-max ranges only, so **the Medium and Long/Thick treatment components are
+   evenly interpolated between the site's own two figures, rounded to 5** (Repair
+   150/185/215/250 · Restore Edit 250/285/315/350; the flat-priced treatments stay
+   flat, and the length movement in those rows is the blow-dry's). Declared to Jumera
+   on the cheat sheet rather than hidden. On a phone the cells drop the AED prefix
+   (a styled span, hidden under 560px) so four columns fit inside the card; verified
+   at 375, both tables inside their cards, no page overflow.
+3. **Courses include the blow-dry, baked in — Kate's ruling.** Course = sessions × the
+   full treatment-and-blow-dry visit at the 25% tier: Repair 585-915 (three) and
+   975-1,520 (five), Colour Lock and caviar 700-800, Restore Edit 810-1,140, vegan
+   585-690. The note under the table now says each session is the same
+   treatment-and-blow-dry visit. From-price: three from 585 (was 340, treatment-only).
+
+Re-audited after the changes: 46 price checks, every discount between 20.00% and
+25.00%, JSON-LD and metas matching. The golden number (flag 4) is a business call
+recorded outside this repo.
+
+---
+
 ## Pass 5, 1 Sep 2026: Kate catches the giveaway, and the official site becomes the base
 
 Kate, reading the treatment card as an operator: Repair at 150 with the blow-dry

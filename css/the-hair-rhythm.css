@@ -554,7 +554,11 @@ body{ overflow-x:clip; }
   .ptable td{ font-size:13.5px; }
   .ptable th{ font-size:10px; letter-spacing:.09em; }
   .ptable th:not(:first-child){ white-space:normal; }
-  .ptable th:not(:first-child), .ptable td:not(:first-child){ padding-left:12px; }
+  .ptable th:not(:first-child), .ptable td:not(:first-child){ padding-left:8px; }
+  .ptable td:first-child{ min-width:0; }
+  /* four length columns on a phone: the AED prefix lives in the card's from-price,
+     the cells keep bare numbers so the table stays inside the card */
+  .ptable .cur{ display:none; }
   .menu-note, .doors-unsure{ font-size:15px; }
 }
 
