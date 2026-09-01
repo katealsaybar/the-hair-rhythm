@@ -77,6 +77,16 @@ column** — the count sits centred and bold between the course name and the two
 bands, and the names go back to being just names. Only Repair carries a five-session
 price in Emma's validated grid; no five-session prices were invented for the others.
 
+And one more from Kate the next morning, reading the table as a client would: is 315
+per visit? It is not — every source prices courses by the whole course — but nothing
+near the numbers said so, and the difference between a course and a single treatment
+lived only in the intro copy and the FAQ. The Courses table now carries its own note,
+Kate's wording for the first sentence: *"One payment, and it covers every session in
+the course. It is the same treatment as a single visit above, booked as a plan, so the
+repair builds session by session instead of starting again each time."* No price
+comparison and no discount framing, deliberately: the differentiation is the mechanism
+(a plan the repair builds through), not the per-session arithmetic.
+
 **Also flagged:** the meeting's own outcome pulled the standalone toner *promotion* from
 the Q4 launch, positioning toner inside a maintenance bundle instead. Kate's instruction
 was to fix the Tone Reset prices, not remove the group, and the Tone Reset is already the
