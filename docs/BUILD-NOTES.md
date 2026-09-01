@@ -71,6 +71,12 @@ column headings wrap instead of forcing the table past the card (caught at the p
 own 360px before shipping). Verified: table fits inside a 280px card, no page overflow
 at 375, both copies ported, 85/85.
 
+Kate's follow-up on the live table, same day: three-or-five was still buried inside
+the course names ("Repair, three sessions"), so the Courses table gains a **Sessions
+column** — the count sits centred and bold between the course name and the two price
+bands, and the names go back to being just names. Only Repair carries a five-session
+price in Emma's validated grid; no five-session prices were invented for the others.
+
 **Also flagged:** the meeting's own outcome pulled the standalone toner *promotion* from
 the Q4 launch, positioning toner inside a maintenance bundle instead. Kate's instruction
 was to fix the Tone Reset prices, not remove the group, and the Tone Reset is already the
