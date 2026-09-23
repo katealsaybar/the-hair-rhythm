@@ -23,34 +23,34 @@
 /* v2 draft only: the loop strip, the card tags, and the draft banner. */
 .draft-bar{ background:#2b2b2b; color:#fff; font:500 13px/1.5 var(--fb); text-align:center; padding:9px 16px; }
 .draft-bar b{ color:#f3c9a8; }
-.rcard__tag,.door__tag{ display:inline-block; font-family:var(--fb); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent-deep); margin:0 0 8px; }
+.rcard__tag,.door__tag{ display:inline-block; font-family:var(--fb); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent-text); font-weight:600; margin:0 0 8px; }
 /* Picker: start from the symptom, not the service (adult learning: problem-centred). */
 .picker{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; max-width:980px; margin:30px auto 0; }
 .picker a{ display:flex; flex-direction:column; justify-content:space-between; gap:10px; min-height:104px; padding:16px; border:1px solid rgba(0,0,0,.12); border-radius:14px; background:#fff; color:var(--ink); text-decoration:none; transition:border-color .15s, transform .15s; }
-.picker a:hover,.picker a:focus-visible{ border-color:var(--accent-deep); transform:translateY(-2px); }
+.picker a:hover,.picker a:focus-visible{ border-color:var(--accent-text); transform:translateY(-2px); }
 .picker b{ font-family:var(--fd); font-weight:500; font-size:17.5px; line-height:1.3; }
-.picker span{ font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent-deep); }
+.picker span{ font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent-text); }
 .picker span::after{ content:" →"; }
-.how{ list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:10px 28px; margin:30px auto 0; padding:0; font-size:15px; color:var(--ink-soft); }
+.how{ list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:10px 28px; margin:30px auto 0; padding:0; font-size:15px; font-weight:400; color:var(--ink); }
 .how li{ display:flex; align-items:center; gap:10px; }
-.how b{ display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--accent-deep); color:#fff; font-size:13px; }
+.how b{ display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--accent-text); color:#fff; font-size:13px; font-weight:600; }
 /* Groups and cards: one consistent read order, problem > fix > timing > price. */
 .rgroup{ margin-top:78px; scroll-margin-top:var(--sticky-h,110px); }
 .rgroup__head{ max-width:640px; margin:0 auto 26px; text-align:center; }
-.rgroup__eyebrow{ font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent-deep); }
+.rgroup__eyebrow{ font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--accent-text); }
 .rgroup__head h3{ font-family:var(--fd); font-weight:500; font-size:clamp(25px,3.2vw,32px); line-height:1.2; margin:8px 0 10px; }
-.rgroup__head p{ margin:0; font-size:16px; line-height:1.65; color:var(--ink-soft); }
+.rgroup__head p{ margin:0; font-size:16.5px; font-weight:400; line-height:1.65; color:#4A4B53; }
 .rcards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
 .rcards--one{ grid-template-columns:minmax(0,420px); justify-content:center; }
 .rcards--two{ grid-template-columns:repeat(auto-fit,minmax(260px,420px)); justify-content:center; }
 .rcard{ display:flex; flex-direction:column; background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:18px; padding:24px 22px 20px; scroll-margin-top:var(--sticky-h,110px); }
-.rcard:target{ border-color:var(--accent-deep); box-shadow:0 0 0 3px rgba(58,168,146,.18); }
+.rcard:target{ border-color:var(--accent-text); box-shadow:0 0 0 3px rgba(58,168,146,.18); }
 .rcard h4{ font-family:var(--fd); font-weight:500; font-size:23px; margin:0 0 14px; }
 .rcard dl{ margin:0 0 18px; display:grid; gap:12px; }
-.rcard dt{ font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); }
-.rcard dd{ margin:3px 0 0; font-size:15.5px; line-height:1.5; color:var(--ink); }
+.rcard dt{ font-size:11.5px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#5A5B63; }
+.rcard dd{ margin:3px 0 0; font-size:16px; font-weight:400; line-height:1.5; color:var(--ink); }
 .rcard__foot{ margin-top:auto; padding-top:16px; border-top:1px solid rgba(0,0,0,.08); display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.rcard__price{ font-size:13.5px; color:var(--ink-soft); }
+.rcard__price{ font-size:14px; font-weight:400; color:#4A4B53; }
 .rcard__price b{ font-family:var(--fd); font-weight:500; font-size:20px; color:var(--ink); margin-left:2px; }
 .rcard__foot .pill{ min-height:44px; }
 .rgroup--home .rgroup__head{ background:var(--stone-soft); border-radius:18px; padding:30px 26px; max-width:760px; }
@@ -65,7 +65,7 @@
 @media (max-width:700px){ .loop{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 .bigger{ max-width:640px; margin:60px auto 0; text-align:center; border-top:1px solid rgba(0,0,0,.1); padding-top:34px; }
 .bigger h3{ font-family:var(--fd); font-size:clamp(22px,2.8vw,27px); font-weight:500; margin:0 0 10px; }
-.bigger p{ font-size:15.5px; line-height:1.65; color:var(--ink-soft); margin:0; }
+.bigger p{ font-size:16px; font-weight:400; line-height:1.65; color:#4A4B53; margin:0; }
 </style>
 </head>
 <body>
