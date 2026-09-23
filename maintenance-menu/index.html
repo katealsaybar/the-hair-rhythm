@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/playfair-display-500.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/inter-300.woff2">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF8F4">
+<title>The Hair Rhythm By Tara Rose</title>
+<meta name="description" content="Root colour, face frames, gloss, toner, trims, treatments and blow-dries with our junior stylists, the specialists for the refresh between your big visits. Abu Dhabi and Dubai.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Hair Rhythm By Tara Rose">
+<meta property="og:description" content="Root colour, face frames, gloss, toner, trims, treatments and blow-dries with our junior stylists, the specialists for the refresh between your big visits. Abu Dhabi and Dubai.">
+<meta property="og:image" content="https://www.tararosesalon.com/og/the-hair-rhythm.jpg?v=1">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Tara Rose">
+
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/trs-core.css">
+<link rel="stylesheet" href="../css/trs-blocks.css">
+<link rel="stylesheet" href="../css/the-hair-rhythm.css">
+<style>
+/* v2 draft only: the loop strip, the card tags, and the draft banner. */
+.draft-bar{ background:#2b2b2b; color:#fff; font:500 13px/1.5 var(--fb); text-align:center; padding:9px 16px; }
+.draft-bar b{ color:#f3c9a8; }
+.rcard__tag,.door__tag{ display:inline-block; font-family:var(--fb); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent-deep); margin:0 0 8px; }
+/* Picker: start from the symptom, not the service (adult learning: problem-centred). */
+.picker{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; max-width:980px; margin:30px auto 0; }
+.picker a{ display:flex; flex-direction:column; justify-content:space-between; gap:10px; min-height:104px; padding:16px; border:1px solid rgba(0,0,0,.12); border-radius:14px; background:#fff; color:var(--ink); text-decoration:none; transition:border-color .15s, transform .15s; }
+.picker a:hover,.picker a:focus-visible{ border-color:var(--accent-deep); transform:translateY(-2px); }
+.picker b{ font-family:var(--fd); font-weight:500; font-size:17.5px; line-height:1.3; }
+.picker span{ font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent-deep); }
+.picker span::after{ content:" →"; }
+.how{ list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:10px 28px; margin:30px auto 0; padding:0; font-size:15px; color:var(--ink-soft); }
+.how li{ display:flex; align-items:center; gap:10px; }
+.how b{ display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--accent-deep); color:#fff; font-size:13px; }
+/* Groups and cards: one consistent read order, problem > fix > timing > price. */
+.rgroup{ margin-top:78px; scroll-margin-top:var(--sticky-h,110px); }
+.rgroup__head{ max-width:640px; margin:0 auto 26px; text-align:center; }
+.rgroup__eyebrow{ font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent-deep); }
+.rgroup__head h3{ font-family:var(--fd); font-weight:500; font-size:clamp(25px,3.2vw,32px); line-height:1.2; margin:8px 0 10px; }
+.rgroup__head p{ margin:0; font-size:16px; line-height:1.65; color:var(--ink-soft); }
+.rcards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+.rcards--one{ grid-template-columns:minmax(0,420px); justify-content:center; }
+.rcards--two{ grid-template-columns:repeat(auto-fit,minmax(260px,420px)); justify-content:center; }
+.rcard{ display:flex; flex-direction:column; background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:18px; padding:24px 22px 20px; scroll-margin-top:var(--sticky-h,110px); }
+.rcard:target{ border-color:var(--accent-deep); box-shadow:0 0 0 3px rgba(58,168,146,.18); }
+.rcard h4{ font-family:var(--fd); font-weight:500; font-size:23px; margin:0 0 14px; }
+.rcard dl{ margin:0 0 18px; display:grid; gap:12px; }
+.rcard dt{ font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); }
+.rcard dd{ margin:3px 0 0; font-size:15.5px; line-height:1.5; color:var(--ink); }
+.rcard__foot{ margin-top:auto; padding-top:16px; border-top:1px solid rgba(0,0,0,.08); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.rcard__price{ font-size:13.5px; color:var(--ink-soft); }
+.rcard__price b{ font-family:var(--fd); font-weight:500; font-size:20px; color:var(--ink); margin-left:2px; }
+.rcard__foot .pill{ min-height:44px; }
+.rgroup--home .rgroup__head{ background:var(--stone-soft); border-radius:18px; padding:30px 26px; max-width:760px; }
+@media (max-width:900px){ .picker{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:420px){ .picker b{ font-size:16px; } .picker a{ min-height:96px; padding:14px; } }
+.door .tbc{ font-family:var(--fb); font-size:14px; font-style:italic; color:var(--ink-soft); }
+.loop{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; max-width:880px; margin:34px auto 0; }
+.loop a{ display:block; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,.22); border-radius:14px; padding:18px 16px; text-align:center; }
+.loop a:hover{ border-color:rgba(255,255,255,.5); }
+.loop b{ display:block; font-family:var(--fd); font-size:21px; font-weight:500; }
+.loop span{ display:block; margin-top:6px; font-size:13.5px; line-height:1.45; opacity:.78; }
+@media (max-width:700px){ .loop{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+.bigger{ max-width:640px; margin:60px auto 0; text-align:center; border-top:1px solid rgba(0,0,0,.1); padding-top:34px; }
+.bigger h3{ font-family:var(--fd); font-size:clamp(22px,2.8vw,27px); font-weight:500; margin:0 0 10px; }
+.bigger p{ font-size:15.5px; line-height:1.65; color:var(--ink-soft); margin:0; }
+</style>
+</head>
+<body>
+
+<div class="draft-bar"><b>DRAFT v2</b> &middot; Maintenance menu, for internal review. Not linked anywhere.</div>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<nav class="trs-nav" aria-label="Primary">
+  <div class="wrap navrow">
+    <a class="pill pill--accent nav__cta" href="#book">Book an appointment</a>
+    <a class="brand" href="https://www.tararosesalon.com/" aria-label="Tara Rose, home">
+      <span class="brand__tick"></span><span class="brand__wm">TARA ROSE</span><small>UAE</small>
+    </a>
+    <a class="nav-link" href="#start">Where would I start? &rarr;</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="hero-b" id="hero">
+  <div class="split">
+    <div class="htext">
+      <span class="campaign-label">The Hair Rhythm By Tara Rose</span>
+      <h1 class="h-1">Great hair isn&rsquo;t one visit. <em>It&rsquo;s a rhythm.</em></h1>
+      <p class="lede">The big colour day matters. What keeps it looking that way is the maintenance in-between: your roots, a face frame, a gloss, a trim, a treatment. Our junior stylists are the specialists for exactly those appointments.</p>
+      <div class="cta-row">
+        <a class="pill pill--accent" href="#book">Book a refresh <span class="arr">&rarr;</span></a>
+        <a class="nav-link" href="#start" style="align-self:center">Where would I start? &rarr;</a>
+      </div>
+    </div>
+    <div class="himg" style="background-image:url(../assets/img/hero-junior.jpg);background-position:center 30%" role="img" aria-label="A junior stylist finishing her client&rsquo;s hair, both of them smiling"></div>
+  </div>
+</section>
+
+<section class="dark" id="rhythm">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">The full loop</span>
+      <h2>Your hair is looked after in four ways. <em>All four, on rhythm.</em></h2>
+      <p class="stack-anchor">Colour, cut, treatment and home care. Your stylist does the big work. Your junior stylist keeps every part of it exactly where you left it, between visits.</p>
+    </div>
+    <div class="loop">
+      <a href="#colour"><b>Colour</b><span>Roots, face frame, gloss and toner, before it grows out or fades</span></a>
+      <a href="#cut"><b>Cut</b><span>A trim that keeps the shape, not only the length</span></a>
+      <a href="#treatments"><b>Treatment</b><span>Condition that builds, visit by visit</span></a>
+      <a href="#homecare"><b>Home care</b><span>What holds it all at home, prescribed for you</span></a>
+    </div>
+    <div class="timeline timeline--strip" style="margin-top:40px">
+      <div class="tstep"><span class="wk">Week 1</span><b>The big visit, with your stylist</b></div>
+      <div class="tstep"><span class="wk">Week 4 to 5</span><b>A gloss or a Tone Reset</b></div>
+      <div class="tstep"><span class="wk">Week 6 to 8</span><b>Roots, a face frame, a trim</b></div>
+      <div class="tstep"><span class="wk">Every visit</span><b>A treatment, and home care in between</b></div>
+    </div>
+    <div class="prose">
+      <p class="prose__anchor">Caught on rhythm, it&rsquo;s a quick refresh, not starting over.</p>
+    </div>
+  </div>
+</section>
+
+<div class="menu-zone">
+
+<section id="start" class="menu-sec" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Your maintenance menu</span>
+      <h2>Start with what you&rsquo;re <em>noticing.</em></h2>
+      <p class="stack-anchor">Pick the one that sounds most like your hair right now. We&rsquo;ll show you the refresh that fixes it.</p>
+    </div>
+
+    <div class="picker" role="list">
+      <a role="listitem" href="#root"><b>My roots are showing</b><span>The Root Refresh</span></a>
+      <a role="listitem" href="#brighten"><b>My blonde has lost its brightness</b><span>The Brightening Refresh</span></a>
+      <a role="listitem" href="#faceframe"><b>The front has grown out first</b><span>The Face Frame</span></a>
+      <a role="listitem" href="#tone"><b>My colour looks warm or brassy</b><span>The Tone Reset</span></a>
+      <a role="listitem" href="#gloss"><b>My brunette looks flat</b><span>The Gloss Refresh</span></a>
+      <a role="listitem" href="#trim"><b>My cut has lost its shape</b><span>The Maintenance Trim</span></a>
+      <a role="listitem" href="#treatment"><b>My hair feels dry or damaged</b><span>Treatment and Blow-dry</span></a>
+      <a role="listitem" href="#blowdries"><b>I just want to feel polished</b><span>Blow-dries</span></a>
+    </div>
+
+    <ol class="how">
+      <li><b>1</b><span>Tell us what you&rsquo;re noticing</span></li>
+      <li><b>2</b><span>Your junior stylist refreshes it</span></li>
+      <li><b>3</b><span>You leave with your next date and your home care</span></li>
+    </ol>
+
+    <!-- COLOUR -->
+    <div class="rgroup" id="colour">
+      <div class="rgroup__head">
+        <span class="rgroup__eyebrow">Maintenance &middot; Colour</span>
+        <h3>Keep your colour looking just done</h3>
+        <p>Colour moves, especially here. Nothing has gone wrong. A short visit before it shows keeps your colour true, and protects the big appointment.</p>
+      </div>
+      <div class="rcards">
+        <article class="rcard" id="root">
+          <span class="rcard__tag">Blonde &middot; Brunette</span>
+          <h4>The Root Refresh</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>A line of regrowth at your parting.</dd>
+            <dt>What we do</dt><dd>Root colour matched to your base, then a blow-dry.</dd>
+            <dt>Best time</dt><dd>Week six to eight.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 305</b></span><a class="pill pill--accent" href="#book" data-svc="root">Book</a></div>
+        </article>
+        <article class="rcard" id="brighten">
+          <span class="rcard__tag">Blonde</span>
+          <h4>The Brightening Refresh</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>Your parting and hairline look darker than the rest.</dd>
+            <dt>What we do</dt><dd>Partial foils where the grow-out shows first, then a blow-dry.</dd>
+            <dt>Best time</dt><dd>Between full highlight or balayage visits.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 365</b></span><a class="pill pill--accent" href="#book" data-svc="foils">Book</a></div>
+        </article>
+        <article class="rcard" id="faceframe">
+          <span class="rcard__tag">Blonde &middot; Brunette</span>
+          <h4>The Face Frame</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>The brightness around your face has dropped.</dd>
+            <dt>What we do</dt><dd>Colour placed softly around your hairline, then a blow-dry.</dd>
+            <dt>Best time</dt><dd>Whenever the front grows out before the rest.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED [TBC]</b></span><a class="pill pill--accent" href="#book" data-svc="faceframe">Book</a></div>
+        </article>
+        <article class="rcard" id="tone">
+          <span class="rcard__tag">Blonde</span>
+          <h4>The Tone Reset</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>Warmth or brass creeping back in.</dd>
+            <dt>What we do</dt><dd>Toner matched to your colour, then a blow-dry.</dd>
+            <dt>Best time</dt><dd>Week four to five after colour.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 200</b></span><a class="pill pill--accent" href="#book" data-svc="toner">Book</a></div>
+        </article>
+        <article class="rcard" id="gloss">
+          <span class="rcard__tag">Brunette</span>
+          <h4>The Gloss Refresh</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>Your brunette reads flat and one-note in the light.</dd>
+            <dt>What we do</dt><dd>A gloss for depth and shine, then a blow-dry.</dd>
+            <dt>Best time</dt><dd>Week four to five, before the shine dulls.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 165</b></span><a class="pill pill--accent" href="#book" data-svc="gloss">Book</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- CUT -->
+    <div class="rgroup" id="cut">
+      <div class="rgroup__head">
+        <span class="rgroup__eyebrow">Maintenance &middot; Cut</span>
+        <h3>Keep your cut sitting the way it did</h3>
+        <p>A trim is still built. It keeps the shape and the frame, not only the length.</p>
+      </div>
+      <div class="rcards rcards--one">
+        <article class="rcard" id="trim">
+          <span class="rcard__tag">Every six to eight weeks</span>
+          <h4>The Maintenance Trim</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>Your cut has lost its shape and won&rsquo;t sit right.</dd>
+            <dt>What we do</dt><dd>A reshape that keeps your frame, cut and finished to leave.</dd>
+            <dt>Best time</dt><dd>Every six to eight weeks.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 200</b></span><a class="pill pill--accent" href="#book" data-svc="cut">Book</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- TREATMENT -->
+    <div class="rgroup" id="treatments">
+      <div class="rgroup__head">
+        <span class="rgroup__eyebrow">Maintenance &middot; Treatment</span>
+        <h3>Build the condition back, visit by visit</h3>
+        <p>Your stylist works through the 8-Step Hair Plan and prescribes the treatment. You don&rsquo;t choose blind.</p>
+      </div>
+      <div class="rcards rcards--two">
+        <article class="rcard" id="treatment">
+          <span class="rcard__tag">Any visit</span>
+          <h4>Treatment and Blow-dry</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>Dryness, frizz, breakage or a scalp that feels off.</dd>
+            <dt>What we do</dt><dd>The treatment your hair needs, then a blow-dry.</dd>
+            <dt>Best time</dt><dd>Monthly, or with any refresh above.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 205</b></span><a class="pill pill--accent" href="#book" data-svc="treatment">Book</a></div>
+        </article>
+        <article class="rcard" id="courses">
+          <span class="rcard__tag">Three or five sessions</span>
+          <h4>Treatment Course</h4>
+          <dl>
+            <dt>You&rsquo;ll notice</dt><dd>One treatment helped, but it didn&rsquo;t last.</dd>
+            <dt>What we do</dt><dd>The same treatment and blow-dry, booked as a plan, one payment.</dd>
+            <dt>Best time</dt><dd>Every three weeks.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 585</b></span><a class="pill pill--accent" href="#book" data-svc="course">Book</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOW-DRIES -->
+    <div class="rgroup" id="blowdries">
+      <div class="rgroup__head">
+        <span class="rgroup__eyebrow">Maintenance &middot; Finish</span>
+        <h3>Feel polished more than once a month</h3>
+        <p>Our junior stylists do more blow-dries than anyone else in the salon. Not a smaller appointment, a specialist one.</p>
+      </div>
+      <div class="rcards">
+        <article class="rcard">
+          <span class="rcard__tag">Three blow-dries</span>
+          <h4>The Blow-dry Edit</h4>
+          <dl>
+            <dt>What we do</dt><dd>Three blow-dries, prepaid, booked as you need them.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 264</b></span><a class="pill pill--accent" href="#book" data-svc="bundle">Book</a></div>
+        </article>
+        <article class="rcard">
+          <span class="rcard__tag">Five blow-dries</span>
+          <h4>The Blow-dry Series</h4>
+          <dl>
+            <dt>What we do</dt><dd>Five blow-dries, prepaid, for when it becomes the routine.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 415</b></span><a class="pill pill--accent" href="#book" data-svc="bundle">Book</a></div>
+        </article>
+        <article class="rcard">
+          <span class="rcard__tag">Eight blow-dries</span>
+          <h4>Four Weeks of Blow-dries</h4>
+          <dl>
+            <dt>What we do</dt><dd>Two a week across four weeks, slots held in advance.</dd>
+          </dl>
+          <div class="rcard__foot"><span class="rcard__price">From <b>AED 660</b></span><a class="pill pill--accent" href="#book" data-svc="bundle">Book</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- HOME CARE -->
+    <div class="rgroup rgroup--home" id="homecare">
+      <div class="rgroup__head">
+        <span class="rgroup__eyebrow">Maintenance &middot; Home care</span>
+        <h3>Home care is the insurance on your hair</h3>
+        <p>At the end of every appointment, your stylist prescribes the shampoo, conditioner and mask that hold your tone, shine and condition at home, and checks them again next visit.</p>
+      </div>
+    </div>
+
+    <div class="bigger">
+      <h3>Ready for a bigger change?</h3>
+      <p>Full colour, a new placement or balayage begins with a consultation with your stylist. Your junior stylist then keeps it on rhythm.</p>
+    </div>
+
+    <p class="menu-note">Prices start at short or fine hair and rise with length and thickness. Your salon tells you your price before anything is booked, not at the till.</p>
+    <p class="doors-unsure"><em>&ldquo;I don&rsquo;t know what&rsquo;s wrong. I just know it isn&rsquo;t right.&rdquo;</em> That is the most common one of all. <a href="https://wa.me/971556245520?text=Hi%20Tara%20Rose%2C%20I%27m%20not%20sure%20what%20my%20hair%20needs.%20Can%20we%20work%20it%20out%20together%3F" target="_blank" rel="noopener">Tell us on WhatsApp &rarr;</a> and we will work it out together.</p>
+  </div>
+</section>
+</div>
+
+<section class="dark reframe" id="reframe">
+  <div class="wrap">
+    <p class="reframe__claim">These are already specialists</p>
+    <p class="reframe__sub">Our junior stylists are not trainees waiting to become something else. They do more roots, more toners, more trims and more maintenance treatments than anyone else in the salon, trained the Tara Rose way and supervised by senior team members on everything they offer you.</p>
+  </div>
+</section>
+
+<section id="wellness" style="background:var(--stone-soft);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Wellness</span>
+      <h2>When did you last have an hour that was <em>just yours?</em></h2>
+    </div>
+    <div class="prose">
+      <p>No messages. Nobody asking you something. No list of things you should be doing instead.</p>
+      <p class="prose__mid">Just someone looking after you. With a junior stylist, that is an hour you can have regularly, not once every couple of months when you feel you have finally earned it.</p>
+      <p class="prose__anchor">You have always earned it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="hour">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">In the chair</span>
+      <h2>Every appointment starts by looking at your hair <em>properly.</em></h2>
+      <p class="stack-anchor">Your stylist works through the 8-Step Hair Plan. She asks about your hair, your routine and how long you want it to last, then gives you a finish that does.</p>
+    </div>
+    <div class="hour-rail">
+      <figure><img src="../assets/img/consult-listens.jpg" alt="A junior stylist talking with her client, mirror in hand" loading="lazy" decoding="async" width="546" height="728"><figcaption>She listens first</figcaption></figure>
+      <figure><img src="../assets/img/consult-looks.jpg" alt="A junior stylist looking closely at the section of hair she is working through" loading="lazy" decoding="async" width="546" height="728"><figcaption>Then she looks properly</figcaption></figure>
+      <figure><img src="../assets/img/consult-explains.jpg" alt="A stylist showing her client the treatment she has chosen for her" loading="lazy" decoding="async" width="546" height="728"><figcaption>Then she explains it</figcaption></figure>
+    </div>
+    <p style="max-width:58ch;margin:34px auto 0;text-align:center;font-family:var(--fd);font-size:clamp(19px,2.4vw,24px);line-height:1.4;color:#fff">You leave knowing what your hair needs next, and when. That is the part that makes the difference.</p>
+  </div>
+</section>
+
+<section class="press-strip press-strip--dark" id="credibility"><div class="wrap"><p class="press-eyebrow">Eleven years. Four salons across the UAE. &middot; As featured in</p><div class="press-row"><a href="https://www.cosmopolitanme.com/beauty/best-dubai-salons-2026" target="_blank" rel="noopener">Cosmopolitan</a><a href="https://visitabudhabi.ae/en/where-to-go/spa-and-wellness/tara-rose" target="_blank" rel="noopener">Experience Abu Dhabi</a><a href="https://professionalbeauty.co.uk/site/newsdetails/salon-spotlight--tara-rose,-abu-dhabi" target="_blank" rel="noopener">Professional Beauty</a><a href="https://www.goodsalonguide.com/community/news/congratulations-to-tara-rose-salon-abu-dhabi-and-dubai" target="_blank" rel="noopener">Good Salon Guide</a></div></div></section>
+
+<section id="reviews" style="background:var(--stone-soft);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">In their words</span>
+      <h2>Four reviews, word for word.</h2>
+    </div>
+    <div class="grid-2" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;max-width:760px;margin:0 auto;">
+      <div class="tcard">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>I visited Tara Rose Al Quoz for the first time and had the most pleasant experience. Areanne was so kind and attentive and really took the time to find out my hair concerns and gave a great recommendation for my hair type. I had the Keratin blow dry and I am really happy with the results.</blockquote>
+        <cite>Elizabeth &middot; on Areanne, Al Quoz</cite>
+      </div>
+      <div class="tcard">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>She made me feel comfortable, explained everything, and did such a beautiful job. I absolutely love how my hair turned out. I&rsquo;ve gotten so many compliments, and people keep asking me where I did it!</blockquote>
+        <cite>Asma &middot; on Irlyn, Khalifa City</cite>
+      </div>
+      <div class="tcard">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>You know that feeling of knowing without a doubt that you have finally found what you were looking for? That is how I felt today during my appointment with Edz.</blockquote>
+        <cite>Marta &middot; on Eds, Mamsha Al Saadiyat</cite>
+      </div>
+      <div class="tcard">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>I had an amazing experience with May! I went in for a full balayage and the results are absolutely perfect exactly what I was looking for. Not only is she incredibly talented, but she is also so kind and made the whole appointment such a pleasure.</blockquote>
+        <cite>An &middot; on May, Khalifa City</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark promise-band" id="promise">
+  <div class="wrap" style="text-align:center">
+    <p class="promise-band__lbl">The Tara Rose Confidence Promise</p>
+    <p class="promise-band__body">If something does not feel right within seven days of any colour or treatment service, we invite you back to refine it. No blame, just care.</p>
+  </div>
+</section>
+
+<section class="reserve" id="book">
+  <div class="wrap">
+    <div class="inner">
+      <div class="head">
+        <span class="eyebrow">Book</span>
+        <h2>Book your refresh.</h2>
+        <p style="max-width:54ch;margin:14px auto 0;font-size:16.5px;line-height:1.62;color:var(--ink-soft);text-align:center">Tell us what you would like to keep on rhythm. We will come back with a time, and your stylist will already know what to look at.</p>
+      </div>
+      <form novalidate>
+        <div class="field">
+          <label for="fname">First name <span class="req">*</span></label>
+          <input id="fname" name="firstName" type="text" placeholder="Your first name" required autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="wa">WhatsApp number <span class="req">*</span></label>
+          <div class="phone-wrap">
+            <select id="cc" name="cc" aria-label="Country code" autocomplete="tel-country-code">
+              <option value="+971" selected>&#127462;&#127466; +971 &middot; UAE</option>
+              <option value="+973">&#127463;&#127469; +973 &middot; Bahrain</option>
+              <option value="+966">&#127480;&#127462; +966 &middot; KSA</option>
+              <option value="+965">&#127472;&#127484; +965 &middot; Kuwait</option>
+              <option value="+974">&#127478;&#127462; +974 &middot; Qatar</option>
+              <option value="+968">&#127476;&#127474; +968 &middot; Oman</option>
+              <option value="+44">&#127468;&#127463; +44 &middot; UK</option>
+            </select>
+            <input id="wa" name="whatsapp" type="tel" placeholder="50 000 0000" required autocomplete="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="svc">What would you like to refresh? <span class="req">*</span></label>
+          <select id="svc" name="svc" required>
+            <option value="" disabled selected>Choose the closest one</option>
+            <option value="root">My roots are showing</option>
+            <option value="foils">My blonde needs brightening at the front</option>
+            <option value="faceframe">A face frame</option>
+            <option value="gloss">My brunette has gone flat</option>
+            <option value="toner">The Tone Reset, my colour has gone warm</option>
+            <option value="cut">A trim, to keep my shape</option>
+            <option value="treatment">Treatment and blow-dry</option>
+            <option value="course">A course of treatments, three or five</option>
+            <option value="bundle">Blow-dries, a bundle or the four weeks</option>
+            <option value="unsure">Something else, or not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="salon">Which salon? <span class="req">*</span></label>
+          <select id="salon" name="salon" required>
+            <option value="" disabled selected>Choose a salon</option>
+            <option value="khalifa-city">Khalifa City A, Abu Dhabi</option>
+            <option value="saadiyat">Mamsha Al Saadiyat, Abu Dhabi</option>
+            <option value="al-quoz">Al Quoz 1, Dubai</option>
+            <option value="motor-city">Motor City, Dubai</option>
+            <option value="either-abudhabi">Either Abu Dhabi salon is fine</option>
+            <option value="either-dubai">Either Dubai salon is fine</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="notes">Anything we should know about your hair?</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="When your last colour was, anything that has gone wrong before, anything you are worried about."></textarea>
+        </div>
+
+        <div class="pdpl">
+          <div class="pdpl__group">
+            <input type="checkbox" class="pdpl__checkbox" id="c-contact" name="consent_contact" required>
+            <label class="pdpl__label" for="c-contact">I am happy for the Tara Rose team to contact me about this booking. <span>(required)</span></label>
+          </div>
+          <div class="pdpl__group">
+            <input type="checkbox" class="pdpl__checkbox" id="c-marketing" name="consent_marketing">
+            <label class="pdpl__label" for="c-marketing">I am happy to hear from Tara Rose about hair care and news. <span>(optional)</span></label>
+          </div>
+          <p class="pdpl__note"><strong>Tara Rose Salon</strong> is the data controller. We use what you send only to arrange your appointment. You can access, correct or delete your details any time at privacy@tararosesalon.com. See our <a href="https://www.tararosesalon.com/en/ae/legal/privacy">Privacy Policy</a>.</p>
+        </div>
+
+        <input type="hidden" name="campaign" value="the-hair-rhythm-2026">
+        <input type="hidden" name="page_variant" value="maintenance-menu-draft">
+
+        <div class="submit-row">
+          <button class="pill pill--accent" type="submit">Book a refresh <span class="arr">&rarr;</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="faq faq--light" id="faq" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Questions</span>
+      <h2>The honest answers.</h2>
+    </div>
+    <details class="q"><summary>Is a junior stylist experienced enough?<span class="chev"></span></summary><div class="ans">She is a specialist in the appointments she does most. Our junior stylists do more roots, toners, trims, blow-dries and maintenance treatments than anyone else in the salon, and that repetition is what makes them brilliant at them. Every one of them is trained the Tara Rose way and supervised by senior team members on everything she offers you.</div></details>
+    <details class="q"><summary>What is the difference between a refresh and a bigger change?<span class="chev"></span></summary><div class="ans">A refresh keeps what you already have: your roots, your face frame, your tone, your shape. A bigger change moves it: more lift, a new placement, full colour. Bigger changes begin with a consultation with your stylist. Refreshes are what your junior stylist does between them.</div></details>
+    <details class="q"><summary>How often should I be coming in?<span class="chev"></span></summary><div class="ans">It depends on your hair and your colour, and your stylist writes yours down for you. A common rhythm is a gloss or Tone Reset at week four or five, then roots, a face frame or a trim around week six to eight, with a treatment at any visit and home care in between.</div></details>
+    <details class="q"><summary>Which salons run The Hair Rhythm?<span class="chev"></span></summary><div class="ans">All four: Khalifa City A and Mamsha Al Saadiyat in Abu Dhabi, and Al Quoz 1 and Motor City in Dubai. A salon appears here only if it can actually deliver the appointment.</div></details>
+    <details class="q"><summary>What if it does not feel right afterwards?<span class="chev"></span></summary><div class="ans">You are covered by the Confidence Promise, in full, further up this page.</div></details>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <span class="brand__wm">TARA ROSE</span>
+        <p>Tara Rose. We see the woman. Not just the hair.</p>
+        <span class="sig">We see you.</span>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <p>Khalifa City A, Abu Dhabi</p>
+        <p>Mamsha Al Saadiyat, Abu Dhabi</p>
+        <p>Al Quoz 1, Dubai</p>
+        <p>Motor City, Dubai</p>
+      </div>
+    </div>
+    <div class="subrow">
+      <span>&copy; 2026 Tara Rose Salon.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/nav-scroll.js" defer></script>
+</body>
+</html>

@@ -23,3 +23,6 @@ docs/*PROMPT*.md
 # Superseded internal framework review. The page follows Emma's concept now, and
 # this repo is public.
 junior-campaign/
+
+# Internal pricing sheet for Jumera (component maths, open questions). Never ships.
+maintenance-menu/PRICING.md
