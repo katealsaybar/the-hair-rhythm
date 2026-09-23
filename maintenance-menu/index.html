@@ -29,8 +29,8 @@
 .picker a{ display:flex; flex-direction:column; justify-content:space-between; gap:10px; min-height:104px; padding:16px; border:1px solid rgba(0,0,0,.12); border-radius:14px; background:#fff; color:var(--ink); text-decoration:none; transition:border-color .15s, transform .15s; }
 .picker a:hover,.picker a:focus-visible{ border-color:var(--accent-text); transform:translateY(-2px); }
 .picker b{ font-family:var(--fd); font-weight:500; font-size:17.5px; line-height:1.3; }
-.picker span{ font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent-text); }
-.picker span::after{ content:" →"; }
+.picker span{ font-size:12px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--accent-text); }
+.picker span::after{ content:" →"; }
 .how{ list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:10px 28px; margin:30px auto 0; padding:0; font-size:15px; font-weight:400; color:var(--ink); }
 .how li{ display:flex; align-items:center; gap:10px; }
 .how b{ display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--accent-text); color:#fff; font-size:13px; font-weight:600; }
@@ -54,7 +54,7 @@
 .rcard__price b{ font-family:var(--fd); font-weight:500; font-size:20px; color:var(--ink); margin-left:2px; }
 .rcard__foot .pill{ min-height:44px; }
 .rgroup--home .rgroup__head{ background:var(--stone-soft); border-radius:18px; padding:30px 26px; max-width:760px; }
-@media (max-width:900px){ .picker{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:900px){ .picker{ grid-template-columns:repeat(2,minmax(0,1fr)); } .picker span{ display:block; min-height:40px; } }
 @media (max-width:420px){ .picker b{ font-size:16px; } .picker a{ min-height:96px; padding:14px; } }
 .door .tbc{ font-family:var(--fb); font-size:14px; font-style:italic; color:var(--ink-soft); }
 .loop{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; max-width:880px; margin:34px auto 0; }
@@ -66,6 +66,121 @@
 .bigger{ max-width:640px; margin:60px auto 0; text-align:center; border-top:1px solid rgba(0,0,0,.1); padding-top:34px; }
 .bigger h3{ font-family:var(--fd); font-size:clamp(22px,2.8vw,27px); font-weight:500; margin:0 0 10px; }
 .bigger p{ font-size:16px; font-weight:400; line-height:1.65; color:#4A4B53; margin:0; }
+:root{ --ink-soft:#6B6459; }
+/* Brand components, carried from the Wellness Voucher page so the two read as one family. */
+.belief--lift{ background:var(--sand); border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); padding:74px 0; }
+.belief--lift h2{ color:var(--ink); }
+.belief--lift .q{ color:#155D4E; }
+.belief--lift p[style*="var(--accent)"]{ color:#155D4E !important; }
+.attr--lift{ color:#56565E !important; }
+@media (max-width:600px){
+.belief--lift{ padding:56px 0 }
+}
+.grid-4{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+@media (max-width:1080px){
+.grid-4{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:560px){
+.grid-4{ grid-template-columns:1fr; }
+}
+.inc{ background:var(--stone-soft); border-radius:var(--r-md); padding:32px 28px; box-shadow:0 1px 2px rgba(45,46,55,.05),0 12px 28px -20px rgba(45,46,55,.16); }
+.inc .plabel{ font-family:var(--fd); font-style:italic; font-size:22px; color:var(--accent-text); margin-bottom:12px; display:block; }
+.inc h3{ font-family:var(--fd); font-weight:500; font-size:24px; line-height:1.1; }
+.inc ul{ list-style:none; margin:20px 0 0; padding:0; display:grid; gap:11px; }
+.inc li{ display:flex; gap:11px; align-items:flex-start; font-family:var(--fb); font-size:14.5px; font-weight:300; line-height:1.5; color:var(--ink); }
+.inc li .tk{ flex:0 0 13px; width:13px; height:2px; background:var(--accent-deep); margin-top:10px; }
+.press-strip .press-row{ display:flex; flex-wrap:wrap; justify-content:center; align-items:stretch; gap:0; max-width:1140px; margin:0 auto; }
+.press-strip .press-row a{
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:9px;
+  padding:4px 26px; text-decoration:none; border-left:1px solid var(--hair);
+  transition:color .3s var(--ease);
+}
+.press-strip .press-row a::before{ content:none }
+.press-logo-box{ height:50px; display:flex; align-items:center; justify-content:center }
+.press-strip .press-row a:first-child{ border-left:0 }
+.press-logo{
+  display:block; width:auto; filter:brightness(0) saturate(100%); opacity:.9;
+  transition:opacity .3s var(--ease), transform .3s var(--ease);
+  image-rendering:-webkit-optimize-contrast;
+}
+.press-logo--cosmo{ height:24px }
+.press-logo--hb{ height:33px }
+.press-logo--pb{ height:46px }
+.press-logo--ent{ height:38px }
+.press-logo--bw{ height:41px }
+.press-strip .press-row a:hover .press-logo{ opacity:1; transform:translateY(-2px) }
+.press-sub{
+  font-family:var(--fb); font-size:10px; font-weight:500; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--ink-soft); white-space:nowrap;
+}
+.press-strip .press-row a:hover .press-sub{ color:var(--ink) }
+@media(max-width:820px){
+.press-strip .press-row a{ padding:12px 16px; border-left:0 }
+.press-sub{ font-size:9.5px; letter-spacing:.12em }
+.press-logo-box{ height:42px }
+.press-logo--cosmo{ height:19px }
+.press-logo--hb{ height:27px }
+.press-logo--pb{ height:37px }
+.press-logo--ent{ height:30px }
+.press-logo--bw{ height:33px }
+}
+.awards{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin:42px 0 0; }
+.award-col{ padding:6px 26px 0; border-left:1px solid var(--hair); }
+.award-col:first-child{ border-left:0; padding-left:0 }
+.award-col:last-child{ padding-right:0 }
+.award-col--hero{ position:relative }
+.award-mark{ display:flex; align-items:center; height:52px; margin:0 0 16px }
+.award-mark img{ height:48px; width:auto; display:block; filter:brightness(0) saturate(100%); opacity:.8 }
+.award-mark--pb img{ height:42px }
+@media(max-width:940px){
+.award-mark{ justify-content:flex-start }
+}
+.award-col__head{ margin:0 0 20px; font-family:var(--fd); font-weight:400; font-size:22px; line-height:1.2; color:var(--ink) }
+.award-col__kind{ display:block; font-family:var(--fb); font-size:10.5px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--accent-text); margin-bottom:7px }
+.award-list{ list-style:none; margin:0; padding:0 }
+.award-list li{
+  display:grid; grid-template-columns:1fr auto; align-items:baseline; column-gap:14px;
+  padding:11px 0; border-bottom:1px solid var(--hair);
+}
+.award-list li:first-child{ border-top:1px solid var(--hair) }
+.award-list b{ grid-column:1; font-family:var(--fb); font-size:14px; font-weight:600; line-height:1.35; color:var(--ink) }
+.award-list span{ grid-column:1; font-family:var(--fb); font-size:12.5px; font-weight:300; line-height:1.4; color:var(--ink-soft); margin-top:2px }
+.award-list em{ grid-column:2; grid-row:1 / span 2; font-family:var(--fb); font-style:normal; font-size:11px; font-weight:500; letter-spacing:.07em; color:var(--ink-soft); text-align:right; text-wrap:balance }
+.award-hof{ margin:0 0 4px; padding:20px 22px; border-radius:var(--r-md); background:var(--paper); border:1px solid var(--accent-deep); text-align:center }
+.award-hof b{ display:block; font-family:var(--fd); font-weight:400; font-size:clamp(26px,2.6vw,32px); line-height:1.05; color:var(--ink) }
+.award-hof span{ display:block; margin-top:7px; font-family:var(--fb); font-size:10.5px; font-weight:500; letter-spacing:.17em; text-transform:uppercase; color:var(--ink-soft) }
+.award-hof em{ display:block; margin-top:10px; font-family:var(--fd); font-style:italic; font-size:19px; color:var(--accent-text) }
+.award-col__note{ margin:14px 0 0; font-family:var(--fb); font-size:12.5px; font-weight:300; line-height:1.55; color:var(--ink-soft) }
+.award-col__note--hof{ margin:10px 0 22px; text-align:center }
+@media(max-width:940px){
+.awards{ grid-template-columns:1fr; gap:38px }
+.award-col{ border-left:0; padding:0 }
+.award-col--hero{ order:-1 }
+}
+.rev-note{ max-width:62ch; margin:0 auto 26px; text-align:center; font-family:var(--fb); font-size:14px; font-weight:300; line-height:1.6; color:var(--ink-soft) }
+@media (max-width:760px){
+.loc .go, a.go{ min-height:44px; display:inline-flex; align-items:center }
+.press-sub{ font-size:10px !important; letter-spacing:.12em }
+}
+.inc.exit{ position:relative; border-top:2px solid var(--accent-deep); overflow:hidden; transition:transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease) }
+.inc.exit:hover{ transform:translateY(-2px); border-top-color:var(--accent-text); box-shadow:0 1px 2px rgba(45,46,55,.05), 0 20px 40px -26px rgba(45,46,55,.3) }
+.inc.exit .plabel{ color:var(--accent-text); font-family:var(--fd); font-style:italic; font-size:22px; letter-spacing:0 }
+.inc.exit h3{ margin-top:6px }
+.loc-tags{display:block;margin:4px 0 8px;font-family:var(--fb);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+
+/* Price-by-length dropdown on each card. */
+.rcard .bands{ margin:0 0 4px; }
+.rcard .bands > summary{ font-weight:600; color:var(--accent-text); }
+.rcard__one{ margin:0 0 6px; font-size:14px; color:var(--ink-soft); }
+.ltable-wrap{ overflow-x:auto; margin:4px 0 6px; }
+.ltable{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }
+.ltable th{ font-size:10.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); text-align:right; padding:6px 4px; }
+.ltable th:first-child,.ltable td:first-child{ text-align:left; }
+.ltable td{ padding:8px 4px; border-top:1px solid var(--hair); text-align:right; color:var(--ink); white-space:nowrap; }
+.ltable td:first-child{ white-space:normal; font-weight:500; }
+.ltable .ses{ text-align:center; }
+@media (max-width:480px){ .ltable{ font-size:12.5px; } .ltable th{ font-size:9.5px; letter-spacing:.03em; padding:6px 3px; } .ltable td{ padding:8px 3px; } }
+.ltable__note{ margin:4px 0 12px; font-size:12.5px; color:var(--ink-soft); }
 </style>
 </head>
 <body>
@@ -100,6 +215,14 @@
     <div class="himg" style="background-image:url(../assets/img/hero-junior.jpg);background-position:center 30%" role="img" aria-label="A junior stylist finishing her client&rsquo;s hair, both of them smiling"></div>
   </div>
 </section>
+
+<section class="press-strip"><div class="wrap"><p class="press-eyebrow">As featured in</p><div class="press-row">
+  <a href="https://www.cosmopolitanme.com/beauty/best-dubai-salons-2026" target="_blank" rel="noopener"><span class="press-logo-box"><img width="600" height="106" class="press-logo press-logo--cosmo" src="https://tararose83.github.io/tara-rose-pages/assets/press/cosmopolitan.svg" alt="Cosmopolitan" decoding="async"></span><span class="press-sub">Best Dubai Salons 2026</span></a>
+  <a href="https://www.harpersbazaararabia.com/beauty/best-balayage-salon-in-dubai" target="_blank" rel="noopener"><span class="press-logo-box"><img width="438" height="107" class="press-logo press-logo--hb" src="https://tararose83.github.io/tara-rose-pages/assets/press/harpers-bazaar.svg" alt="Harper&rsquo;s Bazaar" decoding="async"></span><span class="press-sub">Arabia, 2024</span></a>
+  <a href="https://professionalbeauty.me/professional-beauty-gcc-awards-hall-of-fame1" target="_blank" rel="noopener"><span class="press-logo-box"><img width="313" height="109" class="press-logo press-logo--pb" src="https://tararose83.github.io/tara-rose-pages/assets/press/professional-beauty.png" alt="Professional Beauty" decoding="async"></span><span class="press-sub">GCC Hall of Fame, 2024</span></a>
+  <a href="https://www.entrepreneur.com/en-ae/starting-a-business/turning-your-creative-talent-into-a-successful-business/454020" target="_blank" rel="noopener"><span class="press-logo-box"><img width="787" height="203" class="press-logo press-logo--ent" src="https://tararose83.github.io/tara-rose-pages/assets/press/entrepreneur.svg" alt="Entrepreneur Middle East" decoding="async"></span><span class="press-sub">By Tara</span></a>
+  <a href="https://beautyworld-dubai.ae.messefrankfurt.com/dubai/en/press/press-releases/all/20241025.html" target="_blank" rel="noopener"><span class="press-logo-box"><img width="115" height="35" class="press-logo press-logo--bw" src="https://tararose83.github.io/tara-rose-pages/assets/press/beautyworld.svg" alt="Beautyworld Middle East" decoding="async"></span><span class="press-sub">Speaker</span></a>
+</div><p class="press-quote">&ldquo;A salon could be a place where a woman walks out feeling genuinely seen, not just groomed.&rdquo;<span>Tara Rose Kidd &middot; in Bizpreneur Middle East, August 2026</span></p></div></section>
 
 <section class="dark" id="rhythm">
   <div class="wrap">
@@ -147,12 +270,6 @@
       <a role="listitem" href="#blowdries"><b>I just want to feel polished</b><span>Blow-dries</span></a>
     </div>
 
-    <ol class="how">
-      <li><b>1</b><span>Tell us what you&rsquo;re noticing</span></li>
-      <li><b>2</b><span>Your junior stylist refreshes it</span></li>
-      <li><b>3</b><span>You leave with your next date and your home care</span></li>
-    </ol>
-
     <!-- COLOUR -->
     <div class="rgroup" id="colour">
       <div class="rgroup__head">
@@ -169,6 +286,7 @@
             <dt>What we do</dt><dd>Root colour matched to your base, then a blow-dry.</dd>
             <dt>Best time</dt><dd>Week six to eight.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><ul><li><span>Short / Fine</span><b>AED 305</b></li><li><span>Medium</span><b>AED 330</b></li><li><span>Long / Thick</span><b>AED 370</b></li><li><span>Extra Long</span><b>AED 465</b></li></ul></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 305</b></span><a class="pill pill--accent" href="#book" data-svc="root">Book</a></div>
         </article>
         <article class="rcard" id="brighten">
@@ -179,6 +297,7 @@
             <dt>What we do</dt><dd>Partial foils where the grow-out shows first, then a blow-dry.</dd>
             <dt>Best time</dt><dd>Between full highlight or balayage visits.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><ul><li><span>Short / Fine</span><b>AED 365</b></li><li><span>Medium</span><b>AED 390</b></li><li><span>Long / Thick</span><b>AED 420</b></li><li><span>Extra Long</span><b>AED 520</b></li></ul></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 365</b></span><a class="pill pill--accent" href="#book" data-svc="foils">Book</a></div>
         </article>
         <article class="rcard" id="faceframe">
@@ -199,6 +318,7 @@
             <dt>What we do</dt><dd>Toner matched to your colour, then a blow-dry.</dd>
             <dt>Best time</dt><dd>Week four to five after colour.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><ul><li><span>Short / Fine</span><b>AED 200</b></li><li><span>Medium</span><b>AED 255</b></li><li><span>Long / Thick</span><b>AED 310</b></li><li><span>Extra Long</span><b>AED 405</b></li></ul></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 200</b></span><a class="pill pill--accent" href="#book" data-svc="toner">Book</a></div>
         </article>
         <article class="rcard" id="gloss">
@@ -209,6 +329,7 @@
             <dt>What we do</dt><dd>A gloss for depth and shine, then a blow-dry.</dd>
             <dt>Best time</dt><dd>Week four to five, before the shine dulls.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><ul><li><span>Short / Fine</span><b>AED 165</b></li><li><span>Medium</span><b>AED 220</b></li><li><span>Long / Thick</span><b>AED 270</b></li><li><span>Extra Long</span><b>AED 320</b></li></ul></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 165</b></span><a class="pill pill--accent" href="#book" data-svc="gloss">Book</a></div>
         </article>
       </div>
@@ -230,6 +351,7 @@
             <dt>What we do</dt><dd>A reshape that keeps your frame, cut and finished to leave.</dd>
             <dt>Best time</dt><dd>Every six to eight weeks.</dd>
           </dl>
+          <p class="rcard__one">One price for every length.</p>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 200</b></span><a class="pill pill--accent" href="#book" data-svc="cut">Book</a></div>
         </article>
       </div>
@@ -251,6 +373,7 @@
             <dt>What we do</dt><dd>The treatment your hair needs, then a blow-dry.</dd>
             <dt>Best time</dt><dd>Monthly, or with any refresh above.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><div class="ltable-wrap"><table class="ltable"><thead><tr><th scope="col">Treatment</th><th scope="col">Short</th><th scope="col">Medium</th><th scope="col">Long</th><th scope="col">X-Long</th></tr></thead><tbody><tr><td>Strength</td><td>205</td><td>245</td><td>280</td><td>320</td></tr><tr><td>Colour Longevity</td><td>245</td><td>260</td><td>270</td><td>280</td></tr><tr><td>Hydration &amp; Frizz</td><td>285</td><td>325</td><td>360</td><td>400</td></tr><tr><td>Scalp Health, vegan</td><td>205</td><td>220</td><td>230</td><td>240</td></tr><tr><td>Scalp Health, caviar</td><td>245</td><td>260</td><td>270</td><td>280</td></tr></tbody></table></div><p class="ltable__note">All prices in AED, blow-dry included.</p></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 205</b></span><a class="pill pill--accent" href="#book" data-svc="treatment">Book</a></div>
         </article>
         <article class="rcard" id="courses">
@@ -261,6 +384,7 @@
             <dt>What we do</dt><dd>The same treatment and blow-dry, booked as a plan, one payment.</dd>
             <dt>Best time</dt><dd>Every three weeks.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><div class="ltable-wrap"><table class="ltable"><thead><tr><th scope="col">Treatment</th><th scope="col">Visits</th><th scope="col">Short</th><th scope="col">Medium</th><th scope="col">Long</th><th scope="col">X-Long</th></tr></thead><tbody><tr><td>Strength</td><td class="ses">3</td><td>585</td><td>700</td><td>800</td><td>915</td></tr><tr><td>Strength</td><td class="ses">5</td><td>975</td><td>1,165</td><td>1,335</td><td>1,520</td></tr><tr><td>Colour Longevity</td><td class="ses">3</td><td>700</td><td>735</td><td>765</td><td>800</td></tr><tr><td>Hydration &amp; Frizz</td><td class="ses">3</td><td>810</td><td>925</td><td>1,025</td><td>1,140</td></tr><tr><td>Scalp Health, vegan</td><td class="ses">3</td><td>585</td><td>620</td><td>655</td><td>690</td></tr><tr><td>Scalp Health, caviar</td><td class="ses">3</td><td>700</td><td>735</td><td>765</td><td>800</td></tr></tbody></table></div><p class="ltable__note">All prices in AED, blow-dry included.</p></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 585</b></span><a class="pill pill--accent" href="#book" data-svc="course">Book</a></div>
         </article>
       </div>
@@ -280,6 +404,7 @@
           <dl>
             <dt>What we do</dt><dd>Three blow-dries, prepaid, booked as you need them.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><ul><li><span>Short / Fine</span><b>AED 264</b></li><li><span>Medium</span><b>AED 300</b></li><li><span>Long / Thick</span><b>AED 336</b></li><li><span>Extra Long</span><b>AED 372</b></li></ul></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 264</b></span><a class="pill pill--accent" href="#book" data-svc="bundle">Book</a></div>
         </article>
         <article class="rcard">
@@ -288,6 +413,7 @@
           <dl>
             <dt>What we do</dt><dd>Five blow-dries, prepaid, for when it becomes the routine.</dd>
           </dl>
+          <details class="bands"><summary>Price by hair length</summary><ul><li><span>Short / Fine</span><b>AED 415</b></li><li><span>Medium</span><b>AED 470</b></li><li><span>Long / Thick</span><b>AED 525</b></li><li><span>Extra Long</span><b>AED 585</b></li></ul></details>
           <div class="rcard__foot"><span class="rcard__price">From <b>AED 415</b></span><a class="pill pill--accent" href="#book" data-svc="bundle">Book</a></div>
         </article>
         <article class="rcard">
@@ -320,6 +446,19 @@
   </div>
 </section>
 </div>
+
+<section class="belief belief--lift">
+  <div class="wrap">
+    <span class="q">&ldquo;</span>
+    <h2>We see the woman. Not just the hair.</h2>
+    <div style="max-width:60ch;margin:26px auto 0;text-align:left">
+      <p style="font-family:var(--fb);font-size:16px;font-weight:300;line-height:1.68;color:var(--ink)">It is the first thing to go, and it is never really about the hair. A woman comes in for her colour and leaves having been asked, properly, how she actually is.</p>
+      <p style="font-family:var(--fb);font-size:16px;font-weight:300;line-height:1.68;color:var(--ink)">Beauty is a form of self-care, and self-care is not the extra you were taught it was. We see the person in the chair, moving through every phase of her life, not just booking another appointment.</p>
+      <p style="font-family:var(--fd);font-style:italic;font-size:20px;line-height:1.45;color:var(--accent);margin-top:26px">If you keep starting from scratch, that was never yours to work out alone.</p>
+    </div>
+    <span class="attr attr--lift">&middot; Tara Rose Kidd, Founder</span>
+  </div>
+</section>
 
 <section class="dark reframe" id="reframe">
   <div class="wrap">
@@ -358,7 +497,56 @@
   </div>
 </section>
 
-<section class="press-strip press-strip--dark" id="credibility"><div class="wrap"><p class="press-eyebrow">Eleven years. Four salons across the UAE. &middot; As featured in</p><div class="press-row"><a href="https://www.cosmopolitanme.com/beauty/best-dubai-salons-2026" target="_blank" rel="noopener">Cosmopolitan</a><a href="https://visitabudhabi.ae/en/where-to-go/spa-and-wellness/tara-rose" target="_blank" rel="noopener">Experience Abu Dhabi</a><a href="https://professionalbeauty.co.uk/site/newsdetails/salon-spotlight--tara-rose,-abu-dhabi" target="_blank" rel="noopener">Professional Beauty</a><a href="https://www.goodsalonguide.com/community/news/congratulations-to-tara-rose-salon-abu-dhabi-and-dubai" target="_blank" rel="noopener">Good Salon Guide</a></div></div></section>
+
+<section style="background:var(--paper);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Real diagnosis. Real results.</span>
+      <h2>Eleven years, and the work has been looked at closely.</h2>
+      <p class="p-lg" style="max-width:56ch;margin:14px auto 0;color:var(--ink-soft)">The first salon opened in Khalifa City A in 2015. Eleven years later, four salons across Dubai and Abu Dhabi, and the same method at every chair.</p>
+    </div>
+    <div class="awards">
+
+      <div class="award-col">
+        <span class="award-mark"><img width="400" height="180" src="https://tararose83.github.io/tara-rose-pages/assets/press/fact.png" alt="FACT Spa and Wellness Awards" loading="lazy" decoding="async"></span>
+        <p class="award-col__head"><span class="award-col__kind">Voted for</span>by women here</p>
+        <ul class="award-list">
+          <li><b>Favourite Hair Salon in Dubai</b><span>FACT Spa and Wellness Awards</span><em>2026</em></li>
+          <li><b>Favourite Hair Salon in Dubai</b><span>FACT Spa and Wellness Awards</span><em>2025</em></li>
+          <li><b>Favourite Hair Salon</b><span>What&rsquo;s On Abu Dhabi Awards</span><em>2017</em></li>
+        </ul>
+        <p class="award-col__note">Decided by public vote, two years running.</p>
+      </div>
+
+      <div class="award-col award-col--hero">
+        <span class="award-mark award-mark--pb"><img width="313" height="109" src="https://tararose83.github.io/tara-rose-pages/assets/press/professional-beauty.png" alt="Professional Beauty GCC Awards" loading="lazy" decoding="async"></span>
+        <p class="award-col__head"><span class="award-col__kind">Judged by</span>the industry</p>
+        <p class="award-hof"><b>Hall of Fame</b><span>Professional Beauty GCC Awards</span><em>2024</em></p>
+        <p class="award-col__note award-col__note--hof">Our founder and our team, inducted together.</p>
+        <ul class="award-list">
+          <li><b>Hair Salon of the Year</b><span>Professional Beauty GCC</span><em>2022</em></li>
+          <li><b>Team of the Year</b><span>Professional Beauty GCC</span><em>2022</em></li>
+          <li><b>Salon Stylist of the Year</b><span>Olena Ostertag</span><em>2022</em></li>
+          <li><b>Business Director of the Year</b><span>Tara Rose Kidd</span><em>2022 and 2023</em></li>
+        </ul>
+        <p class="award-col__note">Four awards in one night in 2022.</p>
+      </div>
+
+      <div class="award-col">
+        <span class="award-mark award-mark--pb"><img width="313" height="109" src="https://tararose83.github.io/tara-rose-pages/assets/press/professional-beauty.png" alt="Professional Beauty GCC Awards" loading="lazy" decoding="async"></span>
+        <p class="award-col__head"><span class="award-col__kind">And the team</span>kept winning</p>
+        <ul class="award-list">
+          <li><b>Salon Manager of the Year</b><span>Emma Williamson</span><em>2024, 2025, 2026</em></li>
+          <li><b>Eyelash Technician of the Year</b><span>Rovina Jordan</span><em>2026</em></li>
+          <li><b>Colour Technician of the Year</b><span>Ruth Bocock</span><em>2024</em></li>
+          <li><b>Colour Technician of the Year</b><span>Blossom Day</span><em>2023</em></li>
+        </ul>
+        <p class="award-col__note">Hall of Fame members cannot enter their own category for three years, so these are the ones the team went out and won.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section id="reviews" style="background:var(--stone-soft);">
   <div class="wrap">
@@ -396,6 +584,20 @@
     <p class="promise-band__lbl">The Tara Rose Confidence Promise</p>
     <p class="promise-band__body">If something does not feel right within seven days of any colour or treatment service, come back and we refine it. No questions.</p>
     <p style="max-width:48ch;margin:18px auto 0;font-family:var(--fb);font-size:15px;font-weight:300;line-height:1.66;color:rgba(255,255,255,.72)">We de-risk with care, never with money back. It is not a guarantee and it is not a refund. It is an invitation to come back.</p>
+  </div>
+</section>
+
+<section style="background:var(--cream);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">What happens next</span>
+      <h2>Three steps, and <em>nothing to work out alone.</em></h2>
+    </div>
+    <div class="grid-3">
+      <div class="inc exit"><span class="plabel">01</span><h3>Tell us what you&rsquo;re noticing</h3><ul><li><span class="tk"></span>Pick the closest one in the form below</li><li><span class="tk"></span>Not sure? Choose &ldquo;not sure&rdquo; and we work it out with you</li></ul></div>
+      <div class="inc exit"><span class="plabel">02</span><h3>Your junior stylist refreshes it</h3><ul><li><span class="tk"></span>She looks at your hair properly before anything starts</li><li><span class="tk"></span>You hear your price for your length before it is booked</li></ul></div>
+      <div class="inc exit"><span class="plabel">03</span><h3>You leave with your rhythm</h3><ul><li><span class="tk"></span>Your next date, written down</li><li><span class="tk"></span>Your home care, prescribed for your hair</li></ul></div>
+    </div>
   </div>
 </section>
 
@@ -483,6 +685,46 @@
           <button class="pill pill--accent" type="submit">Book a refresh <span class="arr">&rarr;</span></button>
         </div>
       </form>
+    </div>
+  </div>
+</section>
+
+<section style="padding:72px 0;background:var(--cream);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Where to find us</span>
+      <h2>Four salons, one rhythm.</h2>
+      <p class="lede" style="max-width:640px;margin:14px auto 0">The Hair Rhythm runs at all four. Book at the one closest to you, and your stylist keeps your rhythm there.</p>
+    </div>
+    <div class="grid-4">
+      <div class="loc">
+        <span class="city">Abu Dhabi</span>
+        <h3>Mamsha al Saadiyat</h3>
+        <span class="loc-tags">Hair &middot; Treatments &middot; Beauty &middot; Facials</span>
+        <p>Mamsha al Saadiyat, Abu Dhabi<br>9:00am&ndash;8:00pm daily</p>
+        <a class="go" href="https://www.tararosesalon.com/en/ae/contact">Details &amp; directions &rarr;</a>
+      </div>
+      <div class="loc">
+        <span class="city">Abu Dhabi</span>
+        <h3>Khalifa City A</h3>
+        <span class="loc-tags">Hair &middot; Treatments &middot; Beauty &middot; Facials</span>
+        <p>Khalifa City A, Abu Dhabi<br>9:00am&ndash;8:00pm daily</p>
+        <a class="go" href="https://www.tararosesalon.com/en/ae/contact">Details &amp; directions &rarr;</a>
+      </div>
+      <div class="loc">
+        <span class="city">Dubai</span>
+        <h3>Al Quoz</h3>
+        <span class="loc-tags">Hair &middot; Beauty</span>
+        <p>Arenco Warehouse 10, Al Quoz 1, Dubai<br>9:00am&ndash;8:00pm daily<br>+971 4 457 2309</p>
+        <a class="go" href="https://www.tararosesalon.com/en/ae/contact">Details &amp; directions &rarr;</a>
+      </div>
+      <div class="loc">
+        <span class="city">Dubai</span>
+        <h3>Motor City</h3>
+        <span class="loc-tags">Hair only</span>
+        <p>Daytona House, Unit LB 03, Motor City, Dubai<br>9:00am&ndash;8:00pm daily<br>+971 4 324 6613</p>
+        <a class="go" href="https://www.tararosesalon.com/en/ae/contact">Details &amp; directions &rarr;</a>
+      </div>
     </div>
   </div>
 </section>
