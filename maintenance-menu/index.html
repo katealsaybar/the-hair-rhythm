@@ -171,6 +171,9 @@
 .rgroup__photo{ max-width:980px; margin:0 auto 26px; border-radius:18px; overflow:hidden; aspect-ratio:16/7; background:var(--stone); box-shadow:0 1px 2px rgba(45,46,55,.05), 0 20px 44px -30px rgba(45,46,55,.18); }
 .rgroup__photo img{ width:100%; height:100%; object-fit:cover; display:block; }
 @media (max-width:640px){ .rgroup__photo{ aspect-ratio:4/3; border-radius:14px; } }
+.photo-ph{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; text-align:center; padding:20px; background:repeating-linear-gradient(135deg,var(--stone-soft) 0 14px,var(--cream) 14px 28px); border:1.5px dashed rgba(45,46,55,.25); box-shadow:none; }
+.photo-ph span{ font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--accent-text); }
+.photo-ph small{ max-width:44ch; font-size:14px; line-height:1.5; color:var(--ink-soft); }
 /* Price-by-length dropdown on each card. */
 .rcard .bands{ margin:0 0 4px; }
 .rcard .bands > summary{ font-weight:600; color:var(--accent-text); }
@@ -280,7 +283,7 @@
         <h3>Keep your colour looking just done</h3>
         <p>Colour moves, especially here. Nothing has gone wrong. A short visit before it shows keeps your colour true, and protects the big appointment.</p>
       </div>
-      <figure class="rgroup__photo"><img src="../assets/img/menu-colour-refresh.jpg" alt="Colour being applied at the basin, the client relaxed with her eyes closed" loading="lazy" decoding="async" width="1600" height="1066" style="object-position:center 45%"></figure>
+      <figure class="rgroup__photo photo-ph" role="img" aria-label="Photo to come"><span>Photo to come</span><small>Colour Refresh: a junior stylist applying root colour or toner at the basin</small></figure>
       <div class="rcards">
         <article class="rcard" id="root">
           <span class="rcard__tag">Blonde &middot; Brunette</span>
@@ -346,7 +349,7 @@
         <h3>Keep your cut sitting the way it did</h3>
         <p>A trim is still built. It keeps the shape and the frame, not only the length.</p>
       </div>
-      <figure class="rgroup__photo"><img src="../assets/img/menu-trim-finish.jpg" alt="A junior stylist finishing her client&rsquo;s freshly shaped curls" loading="lazy" decoding="async" width="1600" height="1066" style="object-position:center 18%"></figure>
+      <figure class="rgroup__photo photo-ph" role="img" aria-label="Photo to come"><span>Photo to come</span><small>Maintenance Trim: a junior stylist trimming and finishing, client in the chair</small></figure>
       <div class="rcards rcards--one">
         <article class="rcard" id="trim">
           <span class="rcard__tag">Every six to eight weeks</span>
@@ -369,7 +372,7 @@
         <h3>Build the condition back, visit by visit</h3>
         <p>Your stylist works through the 8-Step Hair Plan and prescribes the treatment. You don&rsquo;t choose blind.</p>
       </div>
-      <figure class="rgroup__photo"><img src="../assets/img/menu-treatment-basin.jpg" alt="A treatment being worked through at the basin" loading="lazy" decoding="async" width="1600" height="1066" style="object-position:center 40%"></figure>
+      <figure class="rgroup__photo photo-ph" role="img" aria-label="Photo to come"><span>Photo to come</span><small>Treatment: a junior stylist working a treatment through at the basin</small></figure>
       <div class="rcards rcards--two">
         <article class="rcard" id="treatment">
           <span class="rcard__tag">Any visit</span>
@@ -403,7 +406,7 @@
         <h3>Feel polished more than once a month</h3>
         <p>Our junior stylists do more blow-dries than anyone else in the salon. Not a smaller appointment, a specialist one.</p>
       </div>
-      <figure class="rgroup__photo"><img src="../assets/img/menu-blowdry-2.jpg" alt="A junior stylist mid blow-dry, dryer and round brush in hand" loading="lazy" decoding="async" width="1600" height="1066" style="object-position:center 30%"></figure>
+      <figure class="rgroup__photo photo-ph" role="img" aria-label="Photo to come"><span>Photo to come</span><small>Blow-dries: a blow-dry specialist mid blow-dry with her client</small></figure>
       <div class="rcards">
         <article class="rcard">
           <span class="rcard__tag">Three blow-dries</span>
@@ -441,7 +444,7 @@
         <h3>Home care is the insurance on your hair</h3>
         <p>At the end of every appointment, your stylist prescribes the shampoo, conditioner and mask that hold your tone, shine and condition at home, and checks them again next visit.</p>
       </div>
-      <figure class="rgroup__photo"><img src="../assets/img/menu-homecare.jpg" alt="The prescribed home care products laid out after the appointment" loading="lazy" decoding="async" width="1600" height="1066" style="object-position:center 50%"></figure>
+      <figure class="rgroup__photo photo-ph" role="img" aria-label="Photo to come"><span>Photo to come</span><small>Home care: the stylist showing her client the prescribed products</small></figure>
     </div>
 
     <div class="bigger">
@@ -601,7 +604,7 @@
       <span class="eyebrow">What happens next</span>
       <h2>Three steps, and <em>nothing to work out alone.</em></h2>
     </div>
-    <figure class="rgroup__photo" style="margin-bottom:30px"><img src="../assets/img/menu-mirror-reveal.jpg" alt="A junior stylist holding up the mirror so her client can see the back, both of them smiling" loading="lazy" decoding="async" width="1600" height="1066" style="object-position:center 12%"></figure>
+    <figure class="rgroup__photo photo-ph" style="margin-bottom:30px" role="img" aria-label="Photo to come"><span>Photo to come</span><small>What happens next: the mirror reveal, client smiling</small></figure>
     <div class="grid-3">
       <div class="inc exit"><span class="plabel">01</span><h3>Tell us what you&rsquo;re noticing</h3><ul><li><span class="tk"></span>Pick the closest one in the form below</li><li><span class="tk"></span>Not sure? Choose &ldquo;not sure&rdquo; and we work it out with you</li></ul></div>
       <div class="inc exit"><span class="plabel">02</span><h3>Your junior stylist refreshes it</h3><ul><li><span class="tk"></span>She looks at your hair properly before anything starts</li><li><span class="tk"></span>You hear your price for your length before it is booked</li></ul></div>
