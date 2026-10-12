@@ -18,6 +18,10 @@ partial foils, face frame and trim (root colour is junior per Emma; the rest is 
 messaging, while the synced `trs-confidence-promise` skill (31 Jul) still locks "No blame, just
 care." Needs one ruling for the whole page and `maintenance-menu/`.
 
+The Maintenance Trim group gets a photo (Kate, 12 Oct): `assets/img/menu-trim-finish.jpg`,
+the trim pick from her marked-up contact sheets that was pulled from the public repo on 23 Sep.
+Back by her say-so; the other five pulled photos stay out.
+
 Original entry:
 
 Tara's 23 Sep ask (root colours, face frames, partial foils, trims, so the page connects to
