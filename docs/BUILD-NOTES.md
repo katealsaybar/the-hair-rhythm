@@ -6,7 +6,19 @@ and must not be swept.
 
 ---
 
-## 12 Oct 2026: colour maintenance added to the root page, no prices (not committed yet)
+## 12 Oct 2026: colour maintenance added to the root page, no prices
+
+**Later the same day, after /brand-review:** the Maintenance Trim moved up beside the
+blow-dries (Kate's call), so the order is blow-dries, trim, treatments, courses, toner,
+blonde band, colour; chips and scroll-spy follow it. The page note now reads "Where a price is
+shown, it is a starting price" because four cards carry no price. Two lines softened: the colour
+"how you leave" and the trim "how you leave". **Open for Tara or Emma:** (1) which stylists do
+partial foils, face frame and trim (root colour is junior per Emma; the rest is unconfirmed);
+(2) the Confidence Promise reads "No questions." on this page since the 22 Sep canonical
+messaging, while the synced `trs-confidence-promise` skill (31 Jul) still locks "No blame, just
+care." Needs one ruling for the whole page and `maintenance-menu/`.
+
+Original entry:
 
 Tara's 23 Sep ask (root colours, face frames, partial foils, trims, so the page connects to
 the full loop) was never finished: the Jumera pricing meeting of 24 Sep did not happen, so
