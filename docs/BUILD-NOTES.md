@@ -6,6 +6,27 @@ and must not be swept.
 
 ---
 
+## 12 Oct 2026: colour maintenance added to the root page, no prices (not committed yet)
+
+Tara's 23 Sep ask (root colours, face frames, partial foils, trims, so the page connects to
+the full loop) was never finished: the Jumera pricing meeting of 24 Sep did not happen, so
+none of the maintenance-menu prices were approved. Kate chose to ready the root page without
+them. New after the blonde band: a "Week six to eight, the grow-out" band, a `#colour` group
+(Root Refresh, Brightening Refresh = partial foils, Face Frame) and a `#trim` group
+(Maintenance Trim), in the same card style as the rest. Each card shows "Priced by your length,
+confirmed before you book" instead of a from-price, and the group note says the salon tells you
+before anything is booked. Copy is from `maintenance-menu/`, prices left behind. Gloss Refresh
+is not on the root page (not in Tara's 23 Sep list). Two chips (Colour, Trim), two form options
+(`colour`, `trim`), scroll-spy ids added.
+
+**Open:** the form values `colour` and `trim` have no GHL offering tag, so `offering` stays
+blank for them (tracking.js `OFFERING`), same as `unsure`. Emma's tag list needs two names.
+Which salons actually offer root colour, foils and face frames is not on the page (sign-off
+finding: not every junior column lists colour). No photos on the new groups. When prices are
+approved, add a from-price and the bands, and add the two tags.
+
+---
+
 ## Pass 5 addendum, 1 Sep 2026 PM: Kate answers the three flags
 
 1. **The toner base is the website's Classic Toner: from 140 / 195 / 250 / 355.**
